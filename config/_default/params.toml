@@ -9,7 +9,7 @@
 #   Latest themes (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in themes in `themes/academic/data/themes/`
 #   Browse user installed themes in `data/themes/`
-theme = "minimal"
+theme = "custom"
 
 # Enable users to switch between day and night mode?
 day_night = false
@@ -253,9 +253,9 @@ plugins_js  = []
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  engine = 2
-  api_key = ""
-  zoom = 15
+  engine = 1
+  api_key = "AIzaSyCb4pexk_nqUBKLcy_kmBAozbyyygagMR0"
+  zoom = 11
 
 ############################
 ## Marketing

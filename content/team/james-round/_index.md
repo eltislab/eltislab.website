@@ -31,7 +31,7 @@ education:
     institution: University of British Columbia
     year: 2018
   - course: BSc, Honours in Biochemistry
-    institution: University of Vicotria
+    institution: University of Victoria
     year: 2011
 
 # Social/Academic Networking
@@ -42,6 +42,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:jround@mail.ubc.ca'  # For a direct email link, use "mailto:test@example.org".
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/james-round-341b78b3/
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=cdOj6lYAAAAJ&hl=en&oi=ao
