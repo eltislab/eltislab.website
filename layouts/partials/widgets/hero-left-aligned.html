@@ -4,7 +4,7 @@
 
 
 <div class="row">
-  <div class="col-md-5 order-md-1 text-center text-md-left">
+  <div class="col-md-10 order-md-1 text-center text-md-left">
 
 
     <h1 class="hero-title">
@@ -12,7 +12,7 @@
     </h1>
 
     {{ with $page.Content }}
-    <div class="hero-lead">{{ . }}</div>
+    <div class="">{{ . }}</div>
     {{ end }}
 
     {{/* Call-to-action link */}}
@@ -55,12 +55,12 @@
     </p>
     {{ end }}
 
-<div class="col-md-2 order-md-2 text-center text-md-left"></div>
+
 
   {{/* Hero image */}}
 
   </div>
-  <div class="col-6 mx-auto col-md-5 order-md-3 hero-media">
+  <div class="col-2 mx-auto my-auto col-md-2 order-md-3 hero-media">
     <img src="{{ printf "img/%s" $page.Params.hero_media | relURL }}" alt="">
   </div>
 </div>

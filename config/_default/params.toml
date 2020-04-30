@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = "Eltis Lab"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "Using enzymatic and metabolomic frameworks to explore actinobacterial physiology and applications"
 
 ############################
 ## Site Features
@@ -71,7 +71,7 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = false, page = false, post = false}}
+edit_page = {repo_url = "", content_dir = "", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
 ############################
 ## Contact details
@@ -93,7 +93,7 @@ address = {street = "2350 Health Sciences Mall", city = "Vancouver", region = "B
 coordinates = {latitude = "49.262403", longitude = "-123.244952"}
 
 # Directions for visitors to locate you.
-directions = "Life Sciences Centre: Room 4508"
+directions = "University of British Columbia: Life Sciences Centre: Room 4508" 
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
@@ -104,7 +104,9 @@ office_hours = []
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
-contact_links = []
+contact_links = [ 
+{icon = "map-marked-alt", icon_pack = "fas", name = "Find us", link = "https://www.google.com/maps/search/?api=1&query=UBC+vancouver+life+science+insitute"}
+]
 
 ############################
 ## Social
@@ -253,7 +255,7 @@ plugins_js  = []
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  engine = 1
+  engine = 0
   api_key = "AIzaSyCb4pexk_nqUBKLcy_kmBAozbyyygagMR0"
   zoom = 11
 

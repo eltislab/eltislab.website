@@ -45,7 +45,7 @@ subtitle = ""
   description = ""  
 
 [[feature]]
-  icon = "industry"
+  icon = "tree"
   icon_pack = "fas"
   name = "Sustainable biomaterials"
   description = ""  
