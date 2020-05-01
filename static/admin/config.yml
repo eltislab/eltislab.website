@@ -107,17 +107,7 @@ collections:
       - label: "Postion"
         name: "role"
         widget: "select"
-        options: ["Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician"]
-          - {label: "other", value: "" }
-      - label: "Role"
-        name: "role"
-        widget: "select"
-        options:
-          - {label: "Researcher", value: "Researchers"}
-          - {label: "Graduate student", value: "Graduate students"}       
-          - {label: "Technician", value: "Technicians"}
-          - {label: "Visitor", value: "Visitors"}
-          - {label: "Alumni", value: "Alumni"}
+        options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician"]
       - label: "Organization and department"
         name: organizations
         widget: "list"
