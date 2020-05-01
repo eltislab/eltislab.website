@@ -4,8 +4,8 @@ backend:
 media_folder: 'static/img/'
 public_folder: 'img'
 collections:
-  - name: posts
-    label: Posts
+  - name: news
+    label: News 
     label_singular: Post
     folder: 'content/post'
     path: '{{slug}}/index'
