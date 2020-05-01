@@ -7,6 +7,66 @@ public_folder: 'img' # try removing once it is all working
 
 collections:
 
+  - name: homepage
+    label: "Edit the Homepage"
+    files:
+      - file: "content/home/about.md"
+        label: "Title and Header Image"
+        name: "head"
+        fields:
+          - {label: "Title", name: "body", widget: "markdown"}
+          - label: "Header Image: Upload an image named `home.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "home"
+            hint: "Header background image. Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
+            media_library:
+              config:
+                multiple: false
+        
+      - file: "content/home/about-description.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "About the lab", name: "body", widget: "markdown", hint: "100-150 words max!"}
+          - label: "Upload a small image/logo named `about.png`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Displays to the right of the 'About' text. Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
+            media_library:
+              config:
+                multiple: false
+
+      - file: "content/home/slider.md"
+        label: "Image slider"
+        name: "slider"
+        fields:
+          - label: "Slider image 1: Upload an image named `slide1.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Slider image 2:Upload an image named `slide2.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Slider image 3:Upload an image named `slide3.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+
   - name: news
     label: News 
     label_singular: News
@@ -71,21 +131,21 @@ collections:
     label: Publications
     label_singular: Publication
     folder: 'content/publication'
-    slug: "{{year}}-{{last_name_first_author}}"
+    slug: "{{year}}-{{last_name_first_author}}-{{publication}}"
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
     identifier_field: slug
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "Publication type", name: "publication_types", wiget: "hidden", default: "2"}
       - {label: "Title", name: "title", widget: "markdown", hint: "Use sentence case"}
+      - {label: "Article publishing date", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: false, hint: "ex. 2020-11-25"}
       - {label: "Last name of the first author", name: "last_name_first_author", widget: "string", hint: "ex. Round"}
-      - {label: "Article publishing date", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", hint: "ex. 2020-11-25"}
-      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
-      - {label: "Article DOI", name: "doi", widget: "string"}
       - label: "Authors"
-        name: "author"
+        name: "authors"
         widget: "list"
-        field: {label: Name, name: author, widget: string, hint: Format = Firstname Lastname (ex. James Round)}
+        field: {label: Name, name: author, widget: string, hint: Format = 'Firstname' 'Middel Intials'. 'Lastname' (ex. James W. Round)}
+      - {label: "Publication type", name: "publication_types", wiget: "hidden", default: '["2"]'}   
+      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
+      - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
 
   - name: team
@@ -172,62 +232,3 @@ collections:
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
 
 
-  - name: homepage
-    label: "Homepage"
-    files:
-      - file: "content/home/about.md"
-        label: "Title and Header Image"
-        name: "head"
-        fields:
-          - {label: "Title", name: "body", widget: "markdown"}
-          - label: "Upload an image named `home.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "home"
-            hint: "Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
-            media_library:
-              config:
-                multiple: false
-        
-      - file: "content/home/about-description.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "About the lab", name: "body", widget: "markdown", hint: "100-150 words max!"}
-          - label: "Upload an image named `about.png`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
-            media_library:
-              config:
-                multiple: false
-
-      - file: "content/home/about-description.md"
-        label: "About"
-        name: "about"
-        fields:
-          - label: "Upload an image named `slide1.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
-          - label: "Upload an image named `slide2.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
-          - label: "Upload an image named `slide3.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
