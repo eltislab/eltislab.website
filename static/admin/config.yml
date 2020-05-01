@@ -15,7 +15,7 @@ collections:
         label: "Title and Header Image"
         name: "head"
         fields:
-          - {label: "Title", name: "body", widget: "markdown", hint: "header 3" <h3> is a good size for this text!}
+          - {label: "Title", name: "body", widget: "markdown", hint: "'header 3' <h3> is a good size for this text!"}
           - label: "Header Image: Upload an image named `home.jpg`"
             name: "filename"
             widget: "image"
