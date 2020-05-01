@@ -19,16 +19,16 @@ height = "840px"
 
 [[item]]
  
-  overlay_img = "slider/slide1.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_img = "slide1.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
 
 [[item]]
 
-  overlay_img = "slider/slide2.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_img = "slide2.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
 
 [[item]]
 
-  overlay_img = "slider/slide3.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_img = "slide3.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.4  # Darken the image. Value in range 0-1.
 +++

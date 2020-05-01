@@ -185,7 +185,7 @@ collections:
             widget: "image"
             default: "home"
             hint: "Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
-            media_library: static/img/headers
+            media_library:
               config:
                 multiple: false
         
@@ -193,12 +193,41 @@ collections:
         label: "About"
         name: "about"
         fields:
-          - {label: "About the lab", name: "body", widget: "markdown"}
+          - {label: "About the lab", name: "body", widget: "markdown", hint: "100-150 words max!"}
           - label: "Upload an image named `about.png`"
             name: "filename"
             widget: "image"
             default: "about"
             hint: "Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
-            media_library: static/img
+            media_library:
+              config:
+                multiple: false
+
+      - file: "content/home/about-description.md"
+        label: "About"
+        name: "about"
+        fields:
+          - label: "Upload an image named `slide1.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Upload an image named `slide2.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Upload an image named `slide3.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
               config:
                 multiple: false
