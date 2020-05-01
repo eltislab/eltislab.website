@@ -185,7 +185,7 @@ collections:
             widget: "image"
             default: "home"
             hint: "Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
-            media_library: static/img/headers/
+            media_library: static/img/headers
               config:
                 multiple: false
         
@@ -199,6 +199,6 @@ collections:
             widget: "image"
             default: "about"
             hint: "Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
-            media_library: static/img/
+            media_library: static/img
               config:
                 multiple: false
