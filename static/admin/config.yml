@@ -94,7 +94,7 @@ collections:
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
-        {label: "Last name", name: "lastname", widget: "string"}
+      - {label: "Last name", name: "lastname", widget: "string"}
       - label: "Role"
         name: "user_groups"
         widget: "select"
