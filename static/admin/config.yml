@@ -133,7 +133,7 @@ collections:
     folder: 'content/publication'
     slug: "{{year}}-{{last_name_first_author}}-{{journal}}"
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
-    identifier_field: {{slug}}
+    identifier_field: "{{slug}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "markdown", hint: "Use sentence case"}
