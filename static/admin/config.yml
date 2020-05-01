@@ -144,7 +144,8 @@ collections:
         widget: "list"
         field: {label: Name, name: author, widget: string, hint: Format = 'Firstname' 'Middel Intials'. 'Lastname' (ex. James W. Round)}
       - {label: "Publication type", name: "publication_types", wiget: "hidden", default: '["2"]'}   
-      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
+      - {label: "Journal", name: "journal", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
+      - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
 
