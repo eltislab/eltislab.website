@@ -2,6 +2,7 @@
 title: Writing technical content in Academic
 date: 2019-07-12
 math: true
+news: news
 diagram: true
 image:
   placement: 3
