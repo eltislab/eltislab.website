@@ -2,10 +2,11 @@ backend:
   name: git-gateway
   branch: master
 media_folder: 'static/img/'
-public_folder: 'img'
+public_folder: 'img' # try removing once it is all working
 
 
 collections:
+
   - name: news
     label: News 
     label_singular: News
@@ -25,11 +26,12 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "Upload an image named `featured.jpg/png`"
+          - label: "Upload an image named `featured.jpg`"
             name: "filename"
             widget: "image"
             default: "featured"
             required: false
+            hint: "Must be a .jpg file!"
             media_library:
               config:
                 multiple: false
@@ -37,12 +39,40 @@ collections:
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
   
+  - name: project
+    label: Projects
+    label_singular: Project
+    folder: 'content/project'
+    path: '{{slug}}/index'  # Store talks in project folder as "title".
+    identifier_field: slug
+    create: true  # Allow users to create new documents in this collection
+    fields:  # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "markdown"}
+      - {label: "Summary", name: "summary", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Featured Image"
+        name: "image"
+        required: true
+        widget: object
+        fields:
+          - label: "Upload an image named `featured.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "featured"
+            hint: "Must be a .jpg file!"
+            media_library:
+              config:
+                multiple: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
+          - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}  
+
   - name: pulication
     label: Publications
     label_singular: Publication
     folder: 'content/publication'
-    path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
     slug: "{{year}}-{{last_name_first_author}}"
+    path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
     identifier_field: slug
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
@@ -57,36 +87,6 @@ collections:
         widget: "list"
         field: {label: Name, name: author, widget: string, hint: Format = Firstname Lastname (ex. James Round)}
       - {label: "Abstract", name: "abstract", widget: "markdown"}
-
-      
- 
-  - name: project
-    label: Projects
-    label_singular: Project
-    folder: 'content/project'
-    path: '{{slug}}/index'  # Store talks in project folder as "title".
-    create: true  # Allow users to create new documents in this collection
-    fields:  # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "markdown"}
-      - {label: "Abstract", name: "abstract", widget: "markdown"}
-      - {label: "Publish this page on", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Featured Image"
-        name: "image"
-        required: false
-        widget: object
-        fields:
-          - label: "Upload an image named `featured.jpg/png`"
-            name: "filename"
-            widget: "image"
-            default: "featured"
-            media_library:
-              config:
-                multiple: false
-          - {label: Caption, name: caption, widget: string, required: false}
-          - {label: Description for screen readers, name: alt_text, widget: string, required: false}
-          - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
-          - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
 
   - name: team
     label: People  
@@ -168,54 +168,37 @@ collections:
               config:
                 multiple: false
           - {label: Caption, name: caption, widget: string, required: false}
-          - {label: Description for screen readers, name: alt_text, widget: string, required: false}
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   - name: homepage
     label: "Homepage"
     files:
-      - file: "content/privacy.md"
-        label: "Privacy Policy"
-        name: "privacy"
+      - file: "content/home/about.md"
+        label: "Title and Header Image"
+        name: "head"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Publish Date", name: "date", widget: "datetime"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Summary", name: "summary", widget: "markdown"}
-          - label: "Draft"
-            name: "draft"
-            required: false
-            widget: "boolean"
-            default: false
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "content/terms.md"
-        label: "Terms"
-        name: "terms"
+          - {label: "Title", name: "body", widget: "markdown"}
+          - label: "Upload an image named `home.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "home"
+            hint: "Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
+            media_library: static/img/headers/
+              config:
+                multiple: false
+        
+      - file: "content/home/about-description.md"
+        label: "About"
+        name: "about"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Publish Date", name: "date", widget: "datetime"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Summary", name: "summary", widget: "markdown"}
-          - label: "Draft"
-            name: "draft"
-            required: false
-            widget: "boolean"
-            default: false
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "About the lab", name: "body", widget: "markdown"}
+          - label: "Upload an image named `about.png`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
+            media_library: static/img/
+              config:
+                multiple: false

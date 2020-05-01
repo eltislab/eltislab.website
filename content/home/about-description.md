@@ -8,7 +8,7 @@ weight = 15  # Order that this section will appear.
 title = ""
 subtitle = ""
 
-hero_media = "UBC.png"
+hero_media = "about.png"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
