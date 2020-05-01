@@ -7,15 +7,18 @@ authors:
 - Lindsay-eltis
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Professor of Microbiology and Immunology
+role: Professor
 
 # Organizations/Affiliations
 organizations:
 - name: Univeristy of British Columbia
+- name: Microbiology and Immunology
   url: "https://www.microbiology.ubc.ca/"
+- name: Biochemistry
+  url: "https://biochem.ubc.ca/"  
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.

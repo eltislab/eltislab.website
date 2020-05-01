@@ -9,12 +9,12 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Candidate
+role: PhD candidate
 
 # Organizations/Affiliations
 organizations:
 - name: Univeristy of British Columbia
-  url: "https://www.microbiology.ubc.ca/"
+  url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: Enthusiastic about creating sustainable biotech solutions.

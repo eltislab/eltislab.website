@@ -6,9 +6,10 @@ public_folder: 'img'
 collections:
   - name: news
     label: News 
-    label_singular: Post
-    folder: 'content/post'
+    label_singular: News
+    folder: 'content/news'
     path: '{{slug}}/index'
+    slug: "{{year}}-{{month}}-{{title}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -16,30 +17,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish this page on", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "markdown"}
-      - label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
-      - label: "Featured"
-        name: "featured"
-        widget: "boolean"
-        default: false
-      - label: "Authors"
-        name: "authors"
-        required: false
-        widget: "list"
-      - label: "Tags"
-        name: "tags"
-        required: false
-        widget: "list"
-      - label: "Categories"
-        name: "categories"
-        required: false
-        widget: "list"
-      - label: "Projects"
-        name: "projects"
-        required: false
-        widget: "list"
       - label: "Featured Image"
         name: "image"
         required: false
@@ -56,66 +33,40 @@ collections:
           - {label: Description for screen readers, name: alt_text, widget: string, required: false}
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
-  - name: talks
-    label: Talks
-    label_singular: Talk
-    folder: 'content/talk'
-    path: '{{year}}/{{slug}}/index'  # Store talks in year-based subfolders, e.g. `talk/2020/my-talk`.
+  
+  - name: pulication
+    label: Publications
+    label_singular: Publication
+    folder: 'content/publication'
+    path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
+    slug: "{{year}}-{{last_name_first_author}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Abstract", name: "abstract", widget: "text"}
-      - {label: "Where", name: "location", widget: "text"}
-      - {label: "From", name: "date", widget: "datetime"}
-      - {label: "To", name: "date_end", widget: "datetime", default: ""}
-      - {label: "All day event?", name: "all_day", widget: "boolean", default: false}
-      - label: Links/Tickets
-        name: links
-        required: false
-        widget: list
-        fields:
-          - {label: Link, name: url, widget: string}
-          - {label: Link text, name: name, widget: string, required: false}
-          - label: Icon pack
-            name: icon_pack
-            widget: select
-            multiple: false
-            required: false
-            options:
-              - {label: "None", value: ""}
-              - {label: "Solid", value: "fas"}
-              - {label: "Regular", value: "far"}
-              - {label: "Brand", value: "fab"}
-              - {label: "Academic", value: "ai"}
-          - {label: Icon, name: icon, widget: string, required: false}
-      - {label: "Event", name: "event", widget: "string"}
-      - {label: "Event link", name: "event_url", widget: "string"}
-      - {label: "Publish this page on", name: "publishDate", widget: "datetime"}
-      - {label: "Markdown slides (reference a deck in 'content/slides/')", name: "slides", widget: "string", required: false}
-      - label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
-      - label: "Featured"
-        name: "featured"
-        widget: "boolean"
-        default: false
+      - {label: "Publication type", name: "publication_types", wiget: "hidden", default: "2"}
+      - {label: "Title", name: "title", widget: "markdown", hint: "Use sentence case"}
+      - {label: "Last name of the first author", name: "last_name_first_author", widget: "string", hint: "ex. Round"}
+      - {label: "Article publishing date", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", hint: "ex. 2020-11-25"}
+      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
+      - {label: "Article DOI", name: "doi", widget: "string"}
       - label: "Authors"
-        name: "authors"
-        required: false
+        name: "author"
         widget: "list"
-      - label: "Tags"
-        name: "tags"
-        required: false
-        widget: "list"
-      - label: "Categories"
-        name: "categories"
-        required: false
-        widget: "list"
-      - label: "Projects (reference projects in 'content/project/')"
-        name: "projects"
-        required: false
-        widget: "list"
+        field: {label: Name, name: author, widget: string, hint: Format = Firstname Lastname (ex. James Round)}
+      - {label: "Abstract", name: "abstract", widget: "markdown"}
+
+      
+ 
+  - name: project
+    label: Projects
+    label_singular: Project
+    folder: 'content/project'
+    path: '{{slug}}/index'  # Store talks in project folder as "title".
+    create: true  # Allow users to create new documents in this collection
+    fields:  # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "markdown"}
+      - {label: "Abstract", name: "abstract", widget: "markdown"}
+      - {label: "Publish this page on", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
       - label: "Featured Image"
         name: "image"
         required: false
@@ -132,7 +83,117 @@ collections:
           - {label: Description for screen readers, name: alt_text, widget: string, required: false}
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
-      - {label: "Details", name: "body", widget: "markdown"}
+
+  - name: team
+    label: People  
+    label_singular: People
+    folder: 'content/team'
+    path: '{{slug}}/index'
+    slug: "{{firstname}}-{{lastname}}"
+    create: true  # Allow users to create new documents in this collection
+    fields:  # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
+      - {label: "First name", name: "firstname", widget: "string"}
+        {label: "Last name", name: "lastname", widget: "string"}
+      - label: "Role"
+        name: "user_groups"
+        widget: "select"
+        options:
+          - {label: "Researcher", value: "Researchers"}
+          - {label: "Graduate student", value: "Graduate students"}       
+          - {label: "Technician", value: "Technicians"}
+          - {label: "Visitor", value: "Visitors"}
+          - {label: "Alumni", value: "Alumni"}
+      - label: "Postion"
+        name: "role"
+        widget: "select"
+        options: ["Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician"]
+          - {label: "other", value: "" }
+      - label: "Role"
+        name: "role"
+        widget: "select"
+        options:
+          - {label: "Researcher", value: "Researchers"}
+          - {label: "Graduate student", value: "Graduate students"}       
+          - {label: "Technician", value: "Technicians"}
+          - {label: "Visitor", value: "Visitors"}
+          - {label: "Alumni", value: "Alumni"}
+      - label: "Organization and department"
+        name: organizations
+        widget: "list"
+        allow_add: false
+        fields: 
+          - label: "Insitution"
+            name: "name"
+            widget: "string"
+            default: "University of British Columbia"
+          - label: "Department"
+            name: "name"
+            widget: "string"
+            default: "Microbiology and Immunology"
+      - label: "Interests"
+        name: "interests"
+        widget: "list"
+        allow_add: false
+        fields: 
+          - {label: "Intrest", name: "intrest1", widget: "string"}
+          - {label: "Intrest", name: "intrest2", widget: "string"}
+          - {label: "Intrest", name: "intrest3", widget: "string"}
+      - label: "Education"
+        name: education
+        widget: "object"
+        fields: 
+          - label: "Education"
+            name: "courses"
+            widget: "list"
+            allow_add: true
+            fields: 
+                        - label: "Degree"
+                          name: "course"
+                          widget: "string"
+                          hint: "ex. PhD, Microbiology and Immunology"
+                        - label: "Insitution"
+                          name: "institution"
+                          widget: "string"
+                          hint: "ex. University of British Columbia"
+                        - label: "Year of completion"
+                          name: "year"
+                          widget: "string"
+                          hint: "ex. 2018"
+      - {label: "Biography", name: "body", widget: "markdown"}
+      - label: "Featured Image"
+        name: "image"
+        required: false
+        widget: object
+        fields:
+          - label: "Upload an image named `avatar.jpg/png`"
+            name: "filename"
+            widget: "image"
+            default: "featured"
+            media_library:
+              config:
+                multiple: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          - {label: Description for screen readers, name: alt_text, widget: string, required: false}
+          - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
+          - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - name: pages
     label: "Pages"
     files:

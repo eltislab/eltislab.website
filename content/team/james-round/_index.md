@@ -7,23 +7,20 @@ authors:
 - james-round
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Postdoctoral Fellow
+role: Postdoctoral fellow
 
 # Organizations/Affiliations
-organizations:
-- name: Univeristy of British Columbia
-  url: "https://www.microbiology.ubc.ca/"
+
+organizations: [{name: Univeristy of British Columbia},{name: Microbiology and Immunology}]
+
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include synthetic biology and metabolic engineering in Actinobacteria.
 
-interests:
-- Synthetic biology
-- Metabolic engineering
-- Green chemistry
+interests: [Synthetic biology, Metabolic engineering, Green chemistry]
 
 education:
   courses:
