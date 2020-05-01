@@ -3,6 +3,8 @@ backend:
   branch: master
 media_folder: 'static/img/'
 public_folder: 'img'
+
+
 collections:
   - name: news
     label: News 
@@ -10,6 +12,7 @@ collections:
     folder: 'content/news'
     path: '{{slug}}/index'
     slug: "{{year}}-{{month}}-{{title}}"
+    filter: {field: "news", value: "news"}
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -40,6 +43,7 @@ collections:
     folder: 'content/publication'
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round`.
     slug: "{{year}}-{{last_name_first_author}}"
+    identifier_field: slug
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Publication type", name: "publication_types", wiget: "hidden", default: "2"}
@@ -184,8 +188,8 @@ collections:
 
 
 
-  - name: pages
-    label: "Pages"
+  - name: homepage
+    label: "Homepage"
     files:
       - file: "content/privacy.md"
         label: "Privacy Policy"
