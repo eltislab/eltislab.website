@@ -151,7 +151,7 @@ collections:
       - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
-      - {label: "Publication type", name: "publication_types", wiget: "hidden", default: '["2"]'}  
+      - {label: "Publication type", name: "publication_types", wiget: "hidden", default: "[2]"}  
 
   - name: team
     label: People  
