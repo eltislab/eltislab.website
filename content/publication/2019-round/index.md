@@ -4,7 +4,7 @@ title: "A biocatalyst for sustainable wax ester production: Re-wiring lipid accu
 date: 2019-11-05
 
 last_name_first_author: Round
-publication: publication
+filter_publication: publication
 
 authors: ["James W. Round", "Raphael Roccor", "Lindsay D. Eltis"]
 

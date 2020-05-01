@@ -15,7 +15,7 @@ collections:
         label: "Title and Header Image"
         name: "head"
         fields:
-          - {label: "Title", name: "body", widget: "markdown"}
+          - {label: "Title", name: "body", widget: "markdown", hint: "header 3" <h3> is a good size for this text!}
           - label: "Header Image: Upload an image named `home.jpg`"
             name: "filename"
             widget: "image"
@@ -84,6 +84,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish this page on", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "markdown"}
+      - {label: "Filter news articles", name: "news", widget: "hidden", default: "news"}
       - label: "Featured Image"
         name: "image"
         required: false
@@ -140,6 +141,7 @@ collections:
     folder: 'content/publication'
     slug: "{{year}}-{{last_name_first_author}}-{{journal}}"
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round-Green_Chem`.
+    filter: {field: "filter_publication", value: "publication"}
     summary: "{{year}}-{{last_name_first_author}}-{{journal}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
@@ -158,6 +160,7 @@ collections:
       - {label: "Abstract", name: "abstract", widget: "markdown"}
       - {label: "Publication type", name: "publication_types", wiget: "hidden", default: '["2"]', hint: Don't change!}  
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
+      - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
   - name: team
     label: People  
