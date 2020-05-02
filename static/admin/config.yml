@@ -246,40 +246,11 @@ collections:
         widget: "list"
         allow_add: true
         collapsed: false
-        hint: "Please enter your email! Then add any additional social apps that you use!<br><br>
-
-              Instructions-<br><br>
-
-                For email: <br>
-                    <BLOCKQUOTE>Icon = 'evelope'<br>
-                    Icon pack = 'fas'<br>
-                    Link = 'mailto:your-email@domain.com' (ex. mailto:jround@mail.ubc.ca)</BLOCKQUOTE><br><br>
-
-                For LinkedIn: <br>
-                    Icon = 'linkedin'<br>
-                    Icon pack = 'fab'<br>
-                    Link = 'url to your profile page'<br><br>         
-
-                For Google scolar: <br>
-                    Icon = 'google-scholar'<br>
-                    Icon pack = 'ai'<br>
-                    Link = 'url to your profile page'<br><br>     
-
-                For GitHub: <br>
-                    Icon = 'github'<br>
-                    Icon pack = 'fab'<br>
-                    Link = 'url to your GitHub page'<br><br>     
-
-                For Twitter: <br>
-                    Icon = 'twitter'<br>
-                    Icon pack = 'fab'<br>
-                    Link = 'url to your profile page'     
-
-              "
+        hint: "Please enter your email! Then add any additional social apps that you want to use!"
         fields: 
-            - {label: "Icon", name: "icon", widget: "string", default: "evelope"}
-            - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas"}
-            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)"}                  
+            - {label: "Icon", name: "icon", widget: "string", default: "evelope", hint: "For email = 'evelope',   For LinkedIn = 'linkedin',   For Google scolar = 'google-scholar',   For GitHub = 'github',    For Twitter = 'twitter'"}
+            - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas", hint: "For email = 'fas',   For LinkedIn = 'fab',   For Google scolar = 'ai',   For GitHub = 'fab',    For Twitter = 'fab'"}
+            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)", hint: "For email = 'mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)',   For social sites = Url to your profile"}                  
       - {label: "Biography", name: "body", widget: "markdown", hint: "Aim for 100-150 words!"}
       - label: "Upload an image named `avatar.jpg` for your headshot"
         name: "filename"
