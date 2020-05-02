@@ -213,9 +213,7 @@ collections:
             default: ["", "https://www.microbiology.ubc.ca/"]
       - label: "Add scientific interests" #NEED TO FIX THIS SECTION - DEFAULTS
         name: "interests"
-        widget: "list"
-        allow_add: false
-        collapsed: false
+        widget: "object"
         hint: "Scientific interests only please!"
         fields: 
         - {label: "Interests", name: "interests", widget: "string", default: 'Scientific interest 1'}
