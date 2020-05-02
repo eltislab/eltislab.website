@@ -88,7 +88,7 @@ collections:
       - label: "Featured Image"
         name: "image"
         required: false
-        widget: object
+        widget: "object"
         fields:
           - label: "Upload an image named `featured.jpg`"
             name: "filename"
@@ -120,7 +120,7 @@ collections:
       - label: "Featured Image"
         name: "image"
         required: true
-        widget: object
+        widget: "object"
         fields:
           - label: "Upload an image named `featured.jpg`"
             name: "filename"
@@ -210,9 +210,9 @@ collections:
         widget: "list"
         allow_add: false
         default: ["","",""]
-        field: - {label: Intrests, name: intrests, widget: string}
+        field: {label: Intrests, name: intrests, widget: string}
       - label: "Education"
-        name: education
+        name: "education"
         widget: "object"
         fields: 
           - label: "Education"
