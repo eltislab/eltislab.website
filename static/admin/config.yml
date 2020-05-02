@@ -214,13 +214,10 @@ collections:
       - label: "Add scientific interests" #NEED TO FIX THIS SECTION - DEFAULTS
         name: "interests"
         widget: "list"
-        allow_add: false
+        allow_add: true
         collapsed: false
-        hint: "Scientific interests only please!"
-        fields: 
-        - {label: "Interests", name: "interest1", widget: "string", default: 'Scientific interest 1'}
-        - {label: "Interests", name: "interest2", widget: "string", default: 'Scientific interest 2'}
-        - {label: "Interests", name: "interest3", widget: "string", default: 'Scientific interest 3'}
+        hint: "Max 4! Scientific interests only please!"
+        field: {label: "Interests", name: "interest", widget: "string", default: 'Scientific interest'}
       - label: "Education"
         name: "education"
         widget: "object"
