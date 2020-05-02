@@ -177,7 +177,6 @@ collections:
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
       - {label: "Last name", name: "lastname", widget: "string"}
-      - {label: "Email", name: "email", widget: "string", default: "ex. 'example@mail.ubc.ca'"}
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"
@@ -249,34 +248,34 @@ collections:
         collapsed: false
         hint: "Please enter your email! Then add any additional social apps that you use! 
 
-        Instructions-
+              Instructions-
 
-          For email: 
-              Icon = 'evelope'
-              Icon pack = 'fas'
-              Link = 'mailto:your-email@domain.com' (ex. mailto:jround@mail.ubc.ca)
+                For email: 
+                    Icon = 'evelope'
+                    Icon pack = 'fas'
+                    Link = 'mailto:your-email@domain.com' (ex. mailto:jround@mail.ubc.ca)
 
-          For LinkedIn: 
-              Icon = 'linkedin'
-              Icon pack = 'fab'
-              Link = 'url to your profile page'         
+                For LinkedIn: 
+                    Icon = 'linkedin'
+                    Icon pack = 'fab'
+                    Link = 'url to your profile page'         
 
-          For Google scolar: 
-              Icon = 'google-scholar'
-              Icon pack = 'ai'
-              Link = 'url to your profile page'     
+                For Google scolar: 
+                    Icon = 'google-scholar'
+                    Icon pack = 'ai'
+                    Link = 'url to your profile page'     
 
-          For GitHub: 
-              Icon = 'github'
-              Icon pack = 'fab'
-              Link = 'url to your GitHub page'     
+                For GitHub: 
+                    Icon = 'github'
+                    Icon pack = 'fab'
+                    Link = 'url to your GitHub page'     
 
-          For Twitter: 
-              Icon = 'twitter'
-              Icon pack = 'fab'
-              Link = 'url to your profile page'     
+                For Twitter: 
+                    Icon = 'twitter'
+                    Icon pack = 'fab'
+                    Link = 'url to your profile page'     
 
-        "
+              "
         fields: 
             - {label: "Icon", name: "icon", widget: "string", default: "evelope"}
             - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas"}
