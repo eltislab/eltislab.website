@@ -81,7 +81,7 @@ collections:
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Aim for less then 15 words!"}
-      - {label: "Summary", name: "summary", widget: "markdown",, hint: "Aim for less then ~30 words!"}
+      - {label: "Summary", name: "summary", widget: "markdown", hint: "Aim for less then ~30 words!"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish this page on", name: "date", widget: "datetime"}
       - {label: "Filter news articles", name: "news", widget: "hidden", default: "news"}
