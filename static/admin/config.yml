@@ -217,7 +217,10 @@ collections:
         allow_add: false
         collapsed: false
         hint: "Scientific interests only please!"
-        field: {label: "Interests", name: "interests", widget: "list", default: ['Scientific interest 1', 'Scientific interest 2', 'Scientific interest 3' ]}
+        fields: 
+        - {label: "Interests", name: "interests", widget: "list", default: 'Scientific interest 1'}
+        - {label: "Interests", name: "interests", widget: "list", default: 'Scientific interest 2'}
+        - {label: "Interests", name: "interests", widget: "list", default: 'Scientific interest 3'}
       - label: "Education"
         name: "education"
         widget: "object"
