@@ -246,33 +246,33 @@ collections:
         widget: "list"
         allow_add: true
         collapsed: false
-        hint: "Please enter your email! Then add any additional social apps that you use! 
+        hint: "Please enter your email! Then add any additional social apps that you use!<br><br>
 
-              Instructions-
+              Instructions-<br><br>
 
-                For email: 
-                    Icon = 'evelope'
-                    Icon pack = 'fas'
-                    Link = 'mailto:your-email@domain.com' (ex. mailto:jround@mail.ubc.ca)
+                For email: <br>
+                    <BLOCKQUOTE>Icon = 'evelope'<br>
+                    Icon pack = 'fas'<br>
+                    Link = 'mailto:your-email@domain.com' (ex. mailto:jround@mail.ubc.ca)</BLOCKQUOTE><br><br>
 
-                For LinkedIn: 
-                    Icon = 'linkedin'
-                    Icon pack = 'fab'
-                    Link = 'url to your profile page'         
+                For LinkedIn: <br>
+                    Icon = 'linkedin'<br>
+                    Icon pack = 'fab'<br>
+                    Link = 'url to your profile page'<br><br>         
 
-                For Google scolar: 
-                    Icon = 'google-scholar'
-                    Icon pack = 'ai'
-                    Link = 'url to your profile page'     
+                For Google scolar: <br>
+                    Icon = 'google-scholar'<br>
+                    Icon pack = 'ai'<br>
+                    Link = 'url to your profile page'<br><br>     
 
-                For GitHub: 
-                    Icon = 'github'
-                    Icon pack = 'fab'
-                    Link = 'url to your GitHub page'     
+                For GitHub: <br>
+                    Icon = 'github'<br>
+                    Icon pack = 'fab'<br>
+                    Link = 'url to your GitHub page'<br><br>     
 
-                For Twitter: 
-                    Icon = 'twitter'
-                    Icon pack = 'fab'
+                For Twitter: <br>
+                    Icon = 'twitter'<br>
+                    Icon pack = 'fab'<br>
                     Link = 'url to your profile page'     
 
               "
