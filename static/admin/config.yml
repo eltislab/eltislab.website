@@ -177,6 +177,7 @@ collections:
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
       - {label: "Last name", name: "lastname", widget: "string"}
+      - {label: "Email", name: "email", widget: "string", default: "Ex. example@mail.ubc.ca"}
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"
@@ -200,7 +201,7 @@ collections:
         name: "organizations"
         widget: "list"
         allow_add: true
-        hint: "Add Insitutions and affiliations"
+        hint: "Add Insitutions and departmental affiliations"
         collapsed: false
         fields: 
           - label: "Insitution/department"
@@ -241,6 +242,48 @@ collections:
                           name: "year"
                           widget: "string"
                           hint: "ex. 2018"
+      - label: "Social links"
+        name: "social"
+        widget: "list"
+        allow_add: false
+        collapsed: false
+        hint: "Delete social fields that you do not use!"
+        fields: 
+                        - label: "Email"
+                          name: "social"
+                          widget: "object"
+                          fields: 
+                            - {label: "Icon", name: "icon", widget: "hidden", default: "evelope"}
+                            - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "fas"}
+                            - {label: "Link", name: "link", widget: "hidden", default: "mailto:{{email}}"}
+                        - label: "LinkedIn"
+                          name: "social"
+                          widget: "object"
+                          fields: 
+                            - {label: "Icon", name: "icon", widget: "hidden", default: "linkedin"}
+                            - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "fab"}
+                            - {label: "Url to your profile page", name: "link", widget: "string", hint: "Go to LinkedIn to retrieve the url of your profile"}
+                        - label: "Google scholar"
+                          name: "social"
+                          widget: "object"
+                          fields: 
+                            - {label: "Icon", name: "icon", widget: "hidden", default: "google-scholar"}
+                            - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "ai"}
+                            - {label: "Url to your profile page", name: "link", widget: "string", hint: "Url of your Google scholar profile"}
+                        - label: "GitHub"
+                          name: "social"
+                          widget: "object"
+                          fields: 
+                            - {label: "Icon", name: "icon", widget: "hidden", default: "github"}
+                            - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "fab"}
+                            - {label: "Url to your profile page", name: "link", widget: "string", hint: "Url of your github"}     
+                        - label: "Twitter"
+                          name: "social"
+                          widget: "object"
+                          fields: 
+                            - {label: "Icon", name: "icon", widget: "hidden", default: "twitter"}
+                            - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "fab"}
+                            - {label: "Url to your profile page", name: "link", widget: "string", hint: "Url of your twitter page"}   
       - {label: "Biography", name: "body", widget: "markdown", hint: "Aim for 100-150 words!"}
       - label: "Upload an image named `avatar.jpg` for your headshot"
         name: "filename"

@@ -1,5 +1,5 @@
 ---
-title: Internal Project
+title: Lignin catabolic enzymes
 summary: An example of using the in-built project page.
 
 date: "2016-04-27T00:00:00Z"
@@ -8,10 +8,8 @@ date: "2016-04-27T00:00:00Z"
 external_link: ""
 
 image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
-
-
+  caption: 
+  focal_point: 
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
