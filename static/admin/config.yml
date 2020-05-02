@@ -15,7 +15,7 @@ collections:
         label: "Title and Header Image"
         name: "head"
         fields:
-          - {label: "Title", name: "body", widget: "markdown", hint: "'header 3' <h3> is a good size for this text!"}
+          - {label: "Title", name: "body", widget: "markdown", hint: "'heading 3' <h3> is a good size for this text!"}
           - label: "Header Image: Upload an image named `home.jpg`"
             name: "filename"
             widget: "image"
@@ -80,10 +80,10 @@ collections:
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Aim for less then 15 words!"}
+      - {label: "Summary", name: "summary", widget: "markdown",, hint: "Aim for less then ~30 words!"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish this page on", name: "date", widget: "datetime"}
-      - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Filter news articles", name: "news", widget: "hidden", default: "news"}
       - label: "Featured Image"
         name: "image"
@@ -114,7 +114,8 @@ collections:
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "markdown"}
-      - {label: "Summary", name: "summary", widget: "markdown"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Aim for less then 15 words!"}
+      - {label: "Summary", name: "summary", widget: "markdown", hint: "Aim for less then ~30 words!"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Featured Image"
         name: "image"
@@ -168,17 +169,19 @@ collections:
     editor:
       preview: false
     folder: 'content/team'
-    path: '{{slug}}/index'
+    path: '{{slug}}/_index'
     slug: "{{firstname}}-{{lastname}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
       - {label: "Last name", name: "lastname", widget: "string"}
+      - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"
         widget: "select"
         options:
+          - {label: "Principal Investigator", value: "Principal Investigator"}
           - {label: "Researcher", value: "Researchers"}
           - {label: "Graduate student", value: "Graduate students"}       
           - {label: "Technician", value: "Technicians"}
@@ -187,28 +190,27 @@ collections:
       - label: "Postion"
         name: "role"
         widget: "select"
-        options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician"]
-      - label: "Organization and department"
-        name: organizations
+        options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician", "Alumni"]
+      - label: "Organization and departments"
+        name: "organizations"
         widget: "list"
-        allow_add: false
+        allow_add: true
+        hint: "Add Insitutions and affiliations"
         fields: 
-          - label: "Insitution"
+          - label: "Insitution/department"
             name: "name"
             widget: "string"
-            default: "University of British Columbia"
-          - label: "Department"
-            name: "name"
+            default: ["University of British Columbia", "Microbiology and Immunology"]
+          - label: "Url link for department or insitution"
+            name: "url"
             widget: "string"
-            default: "Microbiology and Immunology"
+            default: ["", "https://www.microbiology.ubc.ca/"]
       - label: "Interests"
         name: "interests"
         widget: "list"
         allow_add: false
-        fields: 
-          - {label: "Intrest", name: "intrest1", widget: "string"}
-          - {label: "Intrest", name: "intrest2", widget: "string"}
-          - {label: "Intrest", name: "intrest3", widget: "string"}
+        default: ["","",""]
+        field: - {label: Intrests, name: intrests, widget: string}
       - label: "Education"
         name: education
         widget: "object"
@@ -230,21 +232,15 @@ collections:
                           name: "year"
                           widget: "string"
                           hint: "ex. 2018"
-      - {label: "Biography", name: "body", widget: "markdown"}
-      - label: "Featured Image"
-        name: "image"
-        required: false
-        widget: object
-        fields:
-          - label: "Upload an image named `avatar.jpg/png`"
-            name: "filename"
-            widget: "image"
-            default: "featured"
-            media_library:
-              config:
-                multiple: false
-          - {label: Caption, name: caption, widget: string, required: false}
-          - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
-          - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
+      - {label: "Biography", name: "body", widget: "markdown", hint: "Aim for 100-150 words!"}
+      - label: "Upload an image named `avatar.jpg` for your headshot"
+        name: "filename"
+        widget: "image"
+        default: "avatar"
+        hint: "Must be a .jpg file! Ideal file size: ~300-400kb, try to have your face centered in the image"
+        media_library:
+          config:
+            multiple: false
+
 
 

@@ -2,10 +2,6 @@
 # Display name
 title: James Round
 
-# Username (this should match the folder name)
-authors:
-- james-round
-
 # Is this the primary user of the site?
 superuser: false
 
@@ -16,18 +12,14 @@ role: Postdoctoral fellow
 
 organizations: [{name: Univeristy of British Columbia},{name: Microbiology and Immunology}]
 
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include synthetic biology and metabolic engineering in Actinobacteria.
-
 interests: [Synthetic biology, Metabolic engineering, Green chemistry]
 
 education:
   courses:
-  - course: PhD in Microbiology and Immunology
+  - course: PhD, Microbiology and Immunology
     institution: University of British Columbia
     year: 2018
-  - course: BSc, Honours in Biochemistry
+  - course: BSc, Honours, Biochemistry
     institution: University of Victoria
     year: 2011
 

@@ -1,10 +1,11 @@
 ---
 # Display name
 title: Lindsay Eltis
+firstname: Lindsay
+lastname: Eltis
 
 # Username (this should match the folder name)
-authors:
-- Lindsay-eltis
+
 
 # Is this the primary user of the site?
 superuser: false
@@ -15,13 +16,11 @@ role: Professor
 # Organizations/Affiliations
 organizations:
 - name: Univeristy of British Columbia
+  url: ""
 - name: Microbiology and Immunology
   url: "https://www.microbiology.ubc.ca/"
 - name: Biochemistry
   url: "https://biochem.ubc.ca/"  
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
 - Enzyme kinetics
@@ -30,7 +29,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Biochemistry
+  - course: PhD, Biochemistry
     institution: University of British Columbia
     year: 1989 
 
