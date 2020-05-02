@@ -196,7 +196,7 @@ collections:
         name: "role"
         widget: "select"
         options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician", "Alumni"]
-      - label: "Organization and departments"
+      - label: "Organization and departments" #NEED TO FIX THIS SECTION - DEFAULTS
         name: "organizations"
         widget: "list"
         allow_add: true
@@ -211,20 +211,13 @@ collections:
             name: "url"
             widget: "string"
             default: ["", "https://www.microbiology.ubc.ca/"]
-      - label: "Add scientific interests"
+      - label: "Add scientific interests" #NEED TO FIX THIS SECTION - DEFAULTS
         name: "interests"
         widget: "list"
         allow_add: false
         collapsed: false
         hint: "Scientific interests only please!"
-        field: 
-          - label: "Intrests"
-            name: "intrests"
-            widget: "string"
-            default: 
-              - "Scientific interest 1"
-              - "Scientific interest 2"
-              - "Scientific interest 3"
+        field: - {label: "Interests", name: "interests", widget: "list", default: ['Scientific interest 1', 'Scientific interest 2', 'Scientific interest 3' ]}
       - label: "Education"
         name: "education"
         widget: "object"
