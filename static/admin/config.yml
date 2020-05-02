@@ -216,8 +216,8 @@ collections:
         widget: "list"
         allow_add: false
         collapsed: false
-        default: ["Scientific interest 1", "Scientific interest 2", "Scientific interest 3"]
         hint: "Scientific interests only please!"
+        field: {label: Intrests, name: intrests, widget: string, default: ["Scientific interest 1","Scientific interest 2","Scientific interest 3"]}
       - label: "Education"
         name: "education"
         widget: "object"
