@@ -177,7 +177,7 @@ collections:
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
       - {label: "Last name", name: "lastname", widget: "string"}
-      - {label: "Email", name: "email", widget: "string", default: "Ex. example@mail.ubc.ca"}
+      - {label: "Email", name: "email", widget: "string", default: "ex. 'example@mail.ubc.ca'"}
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"
@@ -244,7 +244,7 @@ collections:
                           hint: "ex. 2018"
       - label: "Social links"
         name: "social"
-        widget: "list"
+        widget: "object"
         allow_add: false
         collapsed: false
         hint: "Delete social fields that you do not use!"
@@ -252,6 +252,7 @@ collections:
                         - label: "Email"
                           name: "social"
                           widget: "object"
+                          hidden: true
                           fields: 
                             - {label: "Icon", name: "icon", widget: "hidden", default: "evelope"}
                             - {label: "Icon pack", name: "icon_pack", widget: "hidden", default: "fas"}
