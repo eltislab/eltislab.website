@@ -164,8 +164,8 @@ collections:
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
   - name: team
-    label: People  
-    label_singular: People
+    label: Team members  
+    label_singular: Team member
     editor:
       preview: false
     folder: 'content/team'
@@ -217,7 +217,14 @@ collections:
         allow_add: false
         collapsed: false
         hint: "Scientific interests only please!"
-        field: {label: Intrests, name: intrests, widget: string, default: ["Scientific interest 1","Scientific interest 2","Scientific interest 3"]}
+        field: 
+          - label: "Intrests"
+            name: "intrests"
+            widget: "string"
+            default: 
+              - "Scientific interest 1"
+              - "Scientific interest 2"
+              - "Scientific interest 3"
       - label: "Education"
         name: "education"
         widget: "object"
