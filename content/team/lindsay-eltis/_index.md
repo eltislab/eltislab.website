@@ -4,9 +4,6 @@ title: Lindsay Eltis
 firstname: Lindsay
 lastname: Eltis
 
-# Username (this should match the folder name)
-
-
 # Is this the primary user of the site?
 superuser: false
 
@@ -55,10 +52,13 @@ social:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
+image:
+
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Principal Investigator
+
 ---
 
 Lindsay obtained his PhD in Biochemistry in 1989 studying interactions between metalloproteins. His interest in bacterial catabolic enzymes and pathways began during his postdoctoral studies in Germany, when he studied enzymes involved in the degradation of polychlorinated biphenyls (PCBs). His primary research interest is bacterial enzymes and pathways responsible for the degradation of aromatic compounds and steroids. The author of over 140 peer-reviewed, original research papers, he uses a wide variety of approaches to gain novel insights into the molecular basis of these catabolic processes. His most significant contributions have changed the way we think about how important classes of enzymes work and how certain pathogens survive in their hosts. Lindsay’s research has important implications for the development of novel biocatalysts for more sustainable processes as well as the development of novel therapeutics. In 2014, Lindsay was awarded a Canada Research Chair in Microbial Catabolism and Biocatalysis.

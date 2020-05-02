@@ -1,6 +1,8 @@
 ---
 # Display name
 title: James Round
+firstname: James
+lastname: Round
 
 # Is this the primary user of the site?
 superuser: false
@@ -10,9 +12,16 @@ role: Postdoctoral fellow
 
 # Organizations/Affiliations
 
-organizations: [{name: Univeristy of British Columbia},{name: Microbiology and Immunology}]
+organizations:
+- name: Univeristy of British Columbia
+  url: ""
+- name: Microbiology and Immunology
+  url: "https://www.microbiology.ubc.ca/"
 
-interests: [Synthetic biology, Metabolic engineering, Green chemistry]
+interests:
+- Synthetic biology, 
+- Metabolic engineering 
+- Green chemistry
 
 education:
   courses:
@@ -40,11 +49,6 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/jwround
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -53,7 +57,6 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Researchers
-- 
 ---
 
 Oleaginous bacteria have considerable potential for the sustainable production of lipid-based chemicals. James' research characterized and exploited lipid biosynthesis enzymes to create a biocatalyst. The work provides insight into bacterial lipid biosynthesis and facilitates the development of processes to sustainably produce oleochemicals.

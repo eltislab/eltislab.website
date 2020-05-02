@@ -180,6 +180,9 @@ collections:
       - label: "Role"
         name: "user_groups"
         widget: "select"
+        multiple: true
+        min: 1
+        max: 1
         options:
           - {label: "Principal Investigator", value: "Principal Investigator"}
           - {label: "Researcher", value: "Researchers"}
@@ -196,6 +199,7 @@ collections:
         widget: "list"
         allow_add: true
         hint: "Add Insitutions and affiliations"
+        collapsed: false
         fields: 
           - label: "Insitution/department"
             name: "name"
@@ -205,11 +209,13 @@ collections:
             name: "url"
             widget: "string"
             default: ["", "https://www.microbiology.ubc.ca/"]
-      - label: "Interests"
+      - label: "Add scientific interests"
         name: "interests"
         widget: "list"
         allow_add: false
-        default: ["","",""]
+        collapsed: false
+        default: ["Scientific interest 1","Scientific interest 2","Scientific interest 3"]
+        hint: "Scientific interests only please!"
         field: {label: Intrests, name: intrests, widget: string}
       - label: "Education"
         name: "education"
@@ -219,6 +225,7 @@ collections:
             name: "courses"
             widget: "list"
             allow_add: true
+            collapsed: false
             fields: 
                         - label: "Degree"
                           name: "course"
