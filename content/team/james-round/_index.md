@@ -19,7 +19,7 @@ organizations:
   url: "https://www.microbiology.ubc.ca/"
 
 interests:
-- Synthetic biology, 
+- Synthetic biology
 - Metabolic engineering 
 - Green chemistry
 

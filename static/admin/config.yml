@@ -196,7 +196,7 @@ collections:
         name: "role"
         widget: "select"
         options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician", "Alumni"]
-      - label: "Organization and departments" #NEED TO FIX THIS SECTION - DEFAULTS
+      - label: "Organization and departments"
         name: "organizations"
         widget: "list"
         allow_add: true
@@ -206,12 +206,13 @@ collections:
           - label: "Insitution/department"
             name: "name"
             widget: "string"
-            default: ["University of British Columbia", "Microbiology and Immunology"]
+            default: "Ex. 'University of British Columbia' or 'Microbiology and Immunology'"
           - label: "Url link for department or insitution"
             name: "url"
             widget: "string"
-            default: ["", "https://www.microbiology.ubc.ca/"]
-      - label: "Add scientific interests" #NEED TO FIX THIS SECTION - DEFAULTS
+            default: "Ex. 'Can be left blank to not have a link' or 'https://www.microbiology.ubc.ca/'"
+            required: false
+      - label: "Scientific interests"
         name: "interests"
         widget: "list"
         allow_add: true
