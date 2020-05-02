@@ -171,6 +171,7 @@ collections:
     folder: 'content/team'
     path: '{{slug}}/_index'
     slug: "{{firstname}}-{{lastname}}"
+    summary: "{{firstname}} {{lastname}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
@@ -183,6 +184,7 @@ collections:
         multiple: true
         min: 1
         max: 1
+        hint: "Pick one role!"
         options:
           - {label: "Principal Investigator", value: "Principal Investigator"}
           - {label: "Researcher", value: "Researchers"}
@@ -214,9 +216,8 @@ collections:
         widget: "list"
         allow_add: false
         collapsed: false
-        default: ["Scientific interest 1","Scientific interest 2","Scientific interest 3"]
+        default: ["Scientific interest 1", "Scientific interest 2", "Scientific interest 3"]
         hint: "Scientific interests only please!"
-        field: {label: Intrests, name: intrests, widget: string}
       - label: "Education"
         name: "education"
         widget: "object"
