@@ -18,7 +18,7 @@ abstract: >-
 
 
   Praesent elit velit, euismod vitae gravida a, venenatis vitae risus. Nulla facilisi. Mauris nec purus lacus. Pellentesque interdum faucibus risus, vel dapibus nisl vestibulum et. In dictum venenatis odio, ut rhoncus nibh euismod non. Nullam lectus tellus, sollicitudin sed consequat ut, rhoncus in sapien. Nullam sit amet blandit turpis.
-publication_types: List [ "2" ]
+publication_types: 2,1
 featured: false
 filter_publication: publication
 ---
