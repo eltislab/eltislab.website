@@ -101,10 +101,9 @@ collections:
       - {label: "Abstract", name: "abstract", widget: "markdown"}
       - label: "Publication type" #Breaks the site! Need to fix.
         name: "publication_types"
-        widget: "list"
-        allow_add: false
-        hint: "Don't change!!!"
-        field: {label: publication type, name: publication_types, widget: string, default: "2,1"}
+        widget: "select"
+        multiple: true
+        options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician", "Alumni"]
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
