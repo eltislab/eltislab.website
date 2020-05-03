@@ -69,7 +69,7 @@ collections:
               config:
                 multiple: false
 
-  - name: news
+  - name: news #Seems to work well
     label: News 
     label_singular: News
     editor:
@@ -104,7 +104,7 @@ collections:
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, default: false}
   
-  - name: project
+  - name: project #Seems to work well
     label: Projects
     label_singular: Project
     editor:
@@ -160,11 +160,11 @@ collections:
       - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
-      - label: "Publication type"
+      - label: "Publication type" #Breaks the site! Need to fix.
         name: "publication_types"
-        widget: "string"
-        default: "[2]"
+        widget: "list"
         hint: "Don't change!!!"
+        field: {label: publication type, name: publication_types, widget: hidden, default: [2]}
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
@@ -179,9 +179,9 @@ collections:
     summary: "{{firstname}} {{lastname}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"}
       - {label: "First name", name: "firstname", widget: "string"}
       - {label: "Last name", name: "lastname", widget: "string"}
+      - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"} #was broken check if moving it fixed it
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"

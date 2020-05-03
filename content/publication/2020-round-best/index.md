@@ -8,7 +8,7 @@ journal: Best
 publication: "*{{journal}}*"
 doi: "2131231"
 abstract: Test test test
-publication_types: "[2]"
+
 featured: false
 filter_publication: publication
 ---
