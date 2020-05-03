@@ -209,11 +209,11 @@ collections:
           - label: "Insitution/department"
             name: "name"
             widget: "string"
-            default: "Ex. 'University of British Columbia' or 'Microbiology and Immunology'"
+            hint: "ex. University of British Columbia or Microbiology and Immunology"
           - label: "Url link for department or insitution"
             name: "url"
             widget: "string"
-            default: "Ex. 'Can be left blank to not have a link' or 'https://www.microbiology.ubc.ca/'"
+            hint: "Add a url to create a link (ex. https://www.microbiology.ubc.ca/). This field can also be left blank to not have a link "
             required: false
       - label: "Scientific interests"
         name: "interests"
@@ -221,7 +221,7 @@ collections:
         allow_add: true
         collapsed: false
         hint: "Max 4! Scientific interests only please!"
-        field: {label: "Interests", name: "interest", widget: "string", default: 'Scientific interest'}
+        field: {label: "Interests", name: "interest", widget: "string", hint: 'Add a scientific interest (ex. Enzymology or Metalloproteins'}
       - label: "Education"
         name: "education"
         widget: "object"
@@ -253,7 +253,7 @@ collections:
         fields: 
             - {label: "Icon", name: "icon", widget: "string", default: "envelope", hint: "For email = 'envelope',   For LinkedIn = 'linkedin',   For Google scolar = 'google-scholar',   For GitHub = 'github',    For Twitter = 'twitter'"}
             - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas", hint: "For email = 'fas',   For LinkedIn = 'fab',   For Google scolar = 'ai',   For GitHub = 'fab',    For Twitter = 'fab'"}
-            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)", hint: "For email = 'mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)',   For social sites = Url to your profile"}                  
+            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com", hint: "For email = 'mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)',   For social sites = Url to your profile"}                  
       - {label: "Biography", name: "body", widget: "markdown", hint: "Aim for 100-150 words!"}
       - label: "Upload an image named `avatar.jpg` for your headshot"
         name: "filename"
