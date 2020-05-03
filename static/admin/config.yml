@@ -7,67 +7,6 @@ publish_mode: editorial_workflow
 
 collections:
 
-  - name: homepage
-    label: "Edit the Homepage"
-    editor:
-      preview: false
-    files:
-      - file: "content/home/about.md"
-        label: "Title and Header Image"
-        name: "head"
-        fields:
-          - {label: "Title", name: "body", widget: "markdown", hint: "'heading 3' <h3> is a good size for this text!"}
-          - label: "Header Image: Upload an image named `home.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "home"
-            hint: "Header background image. Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
-            media_library:
-              config:
-                multiple: false
-        
-      - file: "content/home/about-description.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "About the lab", name: "body", widget: "markdown", hint: "100-150 words max!"}
-          - label: "Upload a small image/logo named `about.png`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Displays to the right of the 'About' text. Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
-            media_library:
-              config:
-                multiple: false
-
-      - file: "content/home/slider.md"
-        label: "Image slider"
-        name: "slider"
-        fields:
-          - label: "Slider image 1: Upload an image named `slide1.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
-          - label: "Slider image 2:Upload an image named `slide2.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
-          - label: "Slider image 3:Upload an image named `slide3.jpg`"
-            name: "filename"
-            widget: "image"
-            default: "about"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
-            media_library:
-              config:
-                multiple: false
 
   - name: news #Seems to work well
     label: News 
@@ -78,8 +17,8 @@ collections:
     path: '{{slug}}/index'
     slug: "{{year}}-{{month}}_{{title}}"
     filter: {field: "news", value: "news"}
-    create: true  # Allow users to create new documents in this collection
-    fields:  # The fields each document in this collection have
+    create: true  
+    fields:  
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Aim for less then 15 words!"}
       - {label: "Summary", name: "summary", widget: "markdown", hint: "Aim for less then ~30 words!"}
@@ -110,10 +49,10 @@ collections:
     editor:
       preview: false
     folder: 'content/project'
-    path: '{{slug}}/index'  # Store talks in project folder as "title".
+    path: '{{slug}}/index'
     identifier_field: "{{slug}}"
-    create: true  # Allow users to create new documents in this collection
-    fields:  # The fields each document in this collection have
+    create: true  
+    fields: 
       - {label: "Title", name: "title", widget: "markdown"}
       - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Aim for less then 15 words!"}
       - {label: "Summary", name: "summary", widget: "markdown", hint: "Aim for less then ~30 words!"}
@@ -145,8 +84,8 @@ collections:
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round-Green_Chem`.
     filter: {field: "filter_publication", value: "publication"}
     summary: "{{year}}-{{last_name_first_author}}-{{journal}}"
-    create: true  # Allow users to create new documents in this collection
-    fields:  # The fields each document in this collection have
+    create: true  
+    fields:  
       - {label: "Title", name: "title", widget: "markdown", hint: "Use sentence case"}
       - {label: "Article publishing date", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: false, hint: "ex. 2020-11-25"}
       - {label: "Last name of the first author", name: "last_name_first_author", widget: "string", hint: "ex. 'Round'"}
@@ -169,7 +108,7 @@ collections:
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
-  - name: team
+  - name: team #Seems to work well
     label: Team members  
     label_singular: Team member
     editor:
@@ -177,8 +116,8 @@ collections:
     folder: 'content/team'
     path: '{{slug}}/_index'
     summary: "{{title}}"
-    create: true  # Allow users to create new documents in this collection
-    fields:  # The fields each document in this collection have
+    create: true  
+    fields:  
       - {label: "Name", name: "title", widget: "string", hint: Format = Firstname Lastname (ex. James Round)}
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
@@ -266,3 +205,64 @@ collections:
 
 
 
+  - name: homepage
+    label: "Edit the Homepage"
+    editor:
+      preview: false
+    files:
+      - file: "content/home/about.md"
+        label: "Title and Header Image"
+        name: "head"
+        fields:
+          - {label: "Title", name: "body", widget: "markdown", hint: "'heading 3' <h3> is a good size for this text!"}
+          - label: "Header Image: Upload an image named `home.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "home"
+            hint: "Header background image. Must be a .jpg file! Ideal dimensions: 1280px w, 840px h"
+            media_library:
+              config:
+                multiple: false
+        
+      - file: "content/home/about-description.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "About the lab", name: "body", widget: "markdown", hint: "100-150 words max!"}
+          - label: "Upload a small image/logo named `about.png`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Displays to the right of the 'About' text. Must be a .png file! Ideal dimensions: ~100px w, ~150px h"
+            media_library:
+              config:
+                multiple: false
+
+      - file: "content/home/slider.md"
+        label: "Image slider"
+        name: "slider"
+        fields:
+          - label: "Slider image 1: Upload an image named `slide1.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Slider image 2:Upload an image named `slide2.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
+          - label: "Slider image 3:Upload an image named `slide3.jpg`"
+            name: "filename"
+            widget: "image"
+            default: "about"
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb"
+            media_library:
+              config:
+                multiple: false
