@@ -1,34 +1,18 @@
-+++
-# Slider widget.
-widget = "slider"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
-
-# Slide interval.
-# Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
-interval = 5000
-
-# Slide height (optional).
-# E.g. `500px` for 500 pixels or `calc(100vh - 70px)` for full screen.
-height = "840px"
-
-# Slides.
-# Duplicate an `[[item]]` block to add more slides.
-
-
-[[item]]
- 
-  overlay_img = "slide1.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
-
-[[item]]
-
-  overlay_img = "slide2.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
-
-[[item]]
-
-  overlay_img = "slide3.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.4  # Darken the image. Value in range 0-1.
-+++
+---
+widget: slider
+interval: 5000
+active: true
+height: 840px
+filename1: img/slide1.jpg
+filename2: img/slide2.jpg
+filename3: img/slide3.jpg
+item:
+  - overlay_img: slide1.jpg
+    overlay_filter: 0.4
+  - overlay_img: slide2.jpg
+    overlay_filter: 0.4
+  - overlay_img: slide3.jpg
+    overlay_filter: 0.4
+weight: 50
+headless: true
+---
