@@ -8,7 +8,7 @@ publication: The best journal
 doi: "23234234"
 abstract: Test test test
 publication_types:
-  - 2,1
+  - 2, 1
 featured: false
 filter_publication: publication
 ---
