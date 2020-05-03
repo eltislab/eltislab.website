@@ -5,15 +5,17 @@ user_groups:
   - Graduate students
 role: PhD student
 organizations:
-  - name: Ex. 'University of British Columbia' or 'Microbiology and Immunology'
-    url: Ex. 'Can be left blank to not have a link' or
-      'https://www.microbiology.ubc.ca/'
+  - name: University of British Columbia
+    url: ""
+  - name: Microbiology and Immunology
+    url: https://www.microbiology.ubc.ca/
 interests:
-  - Scientific interest
+  - Sciency science
+  - Super science
 education:
   courses:
     - course: BSc, Testing
-      institution: Testitust
+      institution: The Test Institute
       year: "1568"
 social:
   - icon: envelope
