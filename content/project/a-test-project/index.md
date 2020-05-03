@@ -1,5 +1,5 @@
 ---
-title: A test project!
+title: A test project about *Rhodococcus*!
 subtitle: Testing the CMS
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
   efficitur tellus eget tellus cursus pharetra. Maecenas eu ex libero.
