@@ -80,7 +80,7 @@ collections:
     editor:
       preview: false
     folder: 'content/publication'
-    slug: "{{year}}-{{last_name_first_author}}-{{publication}}"
+    slug: "{{year}}-{{last_name_first_author}}_{{publication}}"
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round-Green_Chem`.
     filter: {field: "filter_publication", value: "publication"}
     summary: "{{year}}-{{last_name_first_author}}-{{publication}}"
