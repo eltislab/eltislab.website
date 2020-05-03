@@ -1,7 +1,7 @@
 ---
-title: "{{firstname}} {{lastname}}"
 firstname: Test
-lastname: McTesterson
+lastname: McTestersons
+title: "{{firstname}} {{lastname}}"
 superuser: false
 user_groups:
   - Graduate students
