@@ -156,15 +156,16 @@ collections:
         collapsed: false
         hint: "Format = 'Firstname' 'Middel Intials'. 'Lastname' (ex. James W. Round)"
         field: {label: Name, name: name, widget: string}    
-      - {label: "Journal", name: "journal", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
+      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
       - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
       - label: "Publication type" #Breaks the site! Need to fix.
         name: "publication_types"
         widget: "list"
+        allow_add: false
         hint: "Don't change!!!"
-        field: {label: publication type, name: publication_types, widget: hidden, default: [2]}
+        field: {label: publication type, name: publication_types, widget: string, default: "2,1"}
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
@@ -175,13 +176,10 @@ collections:
       preview: false
     folder: 'content/team'
     path: '{{slug}}/_index'
-    slug: "{{firstname}}-{{lastname}}"
-    summary: "{{firstname}} {{lastname}}"
+    summary: "{{title}}"
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "First name", name: "firstname", widget: "string"}
-      - {label: "Last name", name: "lastname", widget: "string"}
-      - {label: "Title", name: "title", widget: "hidden", default: "{{firstname}} {{lastname}}"} #was broken check if moving it fixed it
+      - {label: "Name", name: "title", widget: "string", hint: Format = Firstname Lastname (ex. James Round)}
       - {label: "Super user", name: "superuser", widget: "hidden", default: false}
       - label: "Role"
         name: "user_groups"
