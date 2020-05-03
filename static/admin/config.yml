@@ -83,7 +83,7 @@ collections:
     slug: "{{year}}-{{last_name_first_author}}-{{publication}}"
     path: '{{slug}}/index'  # Store talks in publication folder as "year-(First author last name)", e.g. `2019-Round-Green_Chem`.
     filter: {field: "filter_publication", value: "publication"}
-    summary: "{{slug}}"
+    summary: "{{year}}-{{last_name_first_author}}-{{publication}}"
     create: true  
     fields:  
       - {label: "Title", name: "title", widget: "markdown", hint: "Use sentence case. Use <sup>superscripts</sup> and <sub>subscripts</sub> tags as needed"}
