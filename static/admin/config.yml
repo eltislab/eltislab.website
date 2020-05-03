@@ -162,8 +162,8 @@ collections:
       - {label: "Abstract", name: "abstract", widget: "markdown"}
       - label: "Publication type"
         name: "publication_types"
-        widget: "select"
-        options: ["[2]","2"]
+        widget: "string"
+        default: "[2]"
         hint: "Don't change!!!"
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
