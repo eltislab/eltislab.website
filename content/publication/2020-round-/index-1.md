@@ -1,5 +1,6 @@
 ---
-title: A test publication that is not about *Rhodococcus*
+title: A test publication that is not about *Rhodococcus.* Also testing
+  <sup>superscripts</sup> and <sub>subscripts</sub>.
 date: 2020-05-03T18:47:52.394Z
 last_name_first_author: Round
 authors:
