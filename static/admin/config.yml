@@ -95,15 +95,9 @@ collections:
         collapsed: false
         hint: "Format = 'Firstname' 'Middel Intials'. 'Lastname' (ex. James W. Round)"
         field: {label: Name, name: name, widget: string}    
-      - {label: "Journal", name: "publication", widget: "string", hint: "Use standard ISO 4 journal abbreviations"}
-      - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
+      - {label: "Journal", name: "publication", widget: "markdown", hint: " Please use italics and standard ISO 4 journal abbreviations!!!"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
-      - label: "Publication type" #Breaks the site! Need to fix.
-        name: "publication_types"
-        widget: "select"
-        multiple: true
-        options: ["Professor","Research associate", "Postdoctoral fellow", "PhD candidate", "PhD student", "MSc student", "Lab manager", "Technician", "Alumni"]
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
