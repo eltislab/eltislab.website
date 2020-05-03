@@ -9,8 +9,6 @@ doi: "324234234"
 abstract: A test abstract
 publication_types:
   - Professor
-  - PhD candidate
-  - Technician
 featured: false
 filter_publication: publication
 ---
