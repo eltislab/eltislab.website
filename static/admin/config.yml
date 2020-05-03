@@ -239,7 +239,7 @@ collections:
             name: "filename1"
             widget: "image"
             default: "slide1.jpg"
-            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb. If having issues uploading new images, use the "Media" tab on CMS homepage.""
+            hint: "Must be a .jpg file! Ideal dimensions: ~1200px w, ~800px h, Ideal file size: ~300-400kb. If having issues uploading new images, use the 'Media' tab on CMS homepage."
             media_library:
               config:
                 multiple: false
