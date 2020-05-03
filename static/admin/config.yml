@@ -160,7 +160,7 @@ collections:
       - {label: "Journal", name: "publication", widget: "hidden", default: "*{{journal}}*"}
       - {label: "Article DOI", name: "doi", widget: "string"} 
       - {label: "Abstract", name: "abstract", widget: "markdown"}
-      - {label: "Publication type", name: "publication_types", wiget: "list", default: ["2",], hint: Don't change!!!}  
+      - {label: "Publication type", name: "publication_types", wiget: "list", default: List [ "2" ], hint: Don't change!!!}  
       - {label: "Featured", name: "featured", widget: "hidden", default: false}
       - {label: "Featured", name: "filter_publication", widget: "hidden", default: "publication"}
 
