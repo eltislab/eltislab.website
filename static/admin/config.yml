@@ -183,9 +183,9 @@ collections:
         collapsed: false
         hint: "Please enter your email! Then add any additional social apps that you want to use!"
         fields: 
-            - {label: "Icon", name: "icon", widget: "string", default: "envelope", hint: "For email = 'envelope',   For LinkedIn = 'linkedin',   For Google scolar = 'google-scholar',   For GitHub = 'github',    For Twitter = 'twitter'"}
-            - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas", hint: "For email = 'fas',   For LinkedIn = 'fab',   For Google scolar = 'ai',   For GitHub = 'fab',    For Twitter = 'fab'"}
-            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com", hint: "For email = 'mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)',   For social sites = Url to your profile"}                  
+            - {label: "Icon", name: "icon", widget: "string", default: "envelope", hint: "For email = 'envelope',   For LinkedIn = 'linkedin',   For Google scolar = 'google-scholar',   For GitHub = 'github',    For Twitter = 'twitter',   For Orcid ='orcid'"}
+            - {label: "Icon pack", name: "icon_pack", widget: "string", default: "fas", hint: "For email = 'fas',   For LinkedIn = 'fab',   For Google scolar = 'ai',   For GitHub = 'fab',    For Twitter = 'fab',   For Orcid ='ai'"}
+            - {label: "Link", name: "link", widget: "string", default: "mailto:your-email@domain.com", hint: "For email = 'mailto:your-email@domain.com (ex. mailto:jround@mail.ubc.ca)',   For social sites = Url to your profile, For Orcid =Url to your profile"}                  
       - {label: "Biography", name: "body", widget: "markdown", hint: "Aim for 100-150 words!"}
       - label: "Upload an image named `avatar.jpg` for your headshot"
         name: "filename"

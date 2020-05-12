@@ -46,6 +46,9 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=cdOj6lYAAAAJ&hl=en&oi=ao
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0003-4736-5755
   - icon: github
     icon_pack: fab
     link: https://github.com/jwround
