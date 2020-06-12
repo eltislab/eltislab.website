@@ -38,6 +38,6 @@ filename: avatar.jpg
 ---
 PhD - Structure and function of heme and siderophore iron uptake systems
 
-Postdocs - Biochemical and biophysical characterization of structured RNA molecules, designing bacterial diagnostic tools, identifying new or synergistic antibiotics 
+Postdocs - Biochemical and biophysical characterization of structured RNA molecules, studying regulatory RNA, designing bacterial diagnostic tools, identifying new or synergistic antibiotic combinations
 
 Research Associate - Operating LC/Q-TOF to study metabolomics
