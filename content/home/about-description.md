@@ -21,4 +21,8 @@ design:
       - "0"
 hero_media: about.png
 ---
-Bacteria possess an astounding armamentarium of catabolic activities. These activities drive important ecological processes, have tremendous biotechnological potential and, in the case of pathogens, ensure survival under host-imposed constraints. The overall objective of our research is to characterize key pathways and enzymes involved in the catabolism of aromatic compounds and steroids in *Mycobacterium* and *Rhodococcus*. Specific objectives are to: elucidate the catalytic mechanism of enzymes, understand how mycobacteria and rhodococci coordinate the concurrent catabolism of multiple substrates to maximize growth, and harness this knowledge to create useful biocatalysts and therapeutics.
+Bacteria possess an astounding armamentarium of catabolic activities. These activities drive important ecological processes, have tremendous biotechnological potential and, in the case of pathogens, ensure survival under host-imposed constraints. The overall objective of our research is to characterize key pathways and enzymes involved in the catabolism of aromatic compounds and steroids in *Mycobacterium* and *Rhodococcus*. This includes, elucidate the catalytic mechanism of enzymes, understanding how mycobacteria and rhodococci coordinate the concurrent catabolism of multiple growth substrates, and harness this knowledge to create useful biocatalysts and urgently needed therapeutics. Specifically, we seek to understand: 
+
+* The pathways and enzymes involved in the catabolism of lignin-derived aromatics.
+* How steroid catabolism is essential to the pathogenesis of *Mycobacterium tuberculosis.*
+* How we can harness catabolic and oleaginous abilities of *Rhodococcus* to create biocatalysts.
