@@ -1,7 +1,7 @@
 ---
 title: Insight into C-C bond hydrolases
-subtitle: Testing the CMS
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur tellus eget tellus cursus pharetra. Maecenas eu ex libero.
+subtitle: 
+summary: The cleavage of C-C bonds is a challenging, but necessary reaction. We seek to understand the myriad approaches natural has evolved to tackle this obstacle.
 image:
   filename: featured.jpg
   focal_point: Smart
