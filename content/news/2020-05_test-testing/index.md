@@ -1,16 +1,17 @@
 ---
 title: Recruitment in the Eltis lab
-subtitle: We are accepting applications!
-summary: The Eltis lab is looking to recruit PhD students and post docs, contact us.
+subtitle: We are accepting applications
+summary: The Eltis lab is looking to recruit PhD students and post docs for a
+  variety of projects in 2021, contact us.
 date: 2020-05-02T23:30:12.413Z
 news: news
 image:
   filename: featured.jpg
   focal_point: Smart
-  preview_only: true
+  preview_only: false
   caption: ""
 ---
-To applicants,
+Dear applicants,
 
 The Eltis lab is looking to fill positions for PhD students and post docs for 2021. 
 
@@ -21,8 +22,6 @@ Specific, we are looking to hire team members for the following projects:
 * Creating rhodococcal biocatalysts with expanded catabolic abilities
 
 If you are interested in our projects, please contact me.
-
-
 
 Cheers,
 
