@@ -1,15 +1,29 @@
 ---
-title: Test Testing
-subtitle: Test Testing
-summary: Just testing the CMS
+title: Recruitment in the Eltis lab
+subtitle: We are accepting applications!
+summary: The Eltis lab is looking to recruit PhD students and post docs, contact us.
 date: 2020-05-02T23:30:12.413Z
 news: news
 image:
   filename: featured.jpg
   focal_point: Smart
-  preview_only: false
-  caption: A graph!
+  preview_only: true
+  caption: ""
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur tellus eget tellus cursus pharetra. Maecenas eu ex libero. Ut euismod, nulla nec aliquam hendrerit, nisi arcu lobortis lorem, at pretium dolor magna et sem. Integer id eros nibh. Nunc posuere lorem vitae nibh semper, id tincidunt dui lobortis. Aliquam semper ultricies egestas. Nullam sit amet purus nibh.
+To applicants,
 
-Praesent elit velit, euismod vitae gravida a, venenatis vitae risus. Nulla facilisi. Mauris nec purus lacus. Pellentesque interdum faucibus risus, vel dapibus nisl vestibulum et. In dictum venenatis odio, ut rhoncus nibh euismod non. Nullam lectus tellus, sollicitudin sed consequat ut, rhoncus in sapien. Nullam sit amet blandit turpis.
+The Eltis lab is looking to fill positions for PhD students and post docs for 2021. 
+
+Specific, we are looking to hire team members for the following projects:
+
+* Cholesterol catabolism in Mtb.
+* Pathway discovery and enzyme characterization involving lignin-derived aromatics.
+* Creating rhodococcal biocatalysts with expanded catabolic abilities
+
+If you are interested in our projects, please contact me.
+
+
+
+Cheers,
+
+Lindsay
