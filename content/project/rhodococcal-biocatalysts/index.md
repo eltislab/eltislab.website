@@ -1,22 +1,17 @@
 ---
 title: Rhodococcal biocatalysts to produce high-value molecules
-subtitle:
-summary: The biosynthetic potential of *Rhodococcus* can be harnessed to create sustainable chemicals and biomaterials that reduce our dependance on petroleum and palm oil.
-
-date: "2016-04-27T00:00:00Z"
-
-# Optional external URL for project (replaces project detail page).
+subtitle: Creating sustainble bioproducts to reduce our dependance on petroleum
+  and palm oil.
+summary: The biosynthetic potential of *Rhodococcus* can be harnessed to create
+  sustainable chemicals and biomaterials that reduce our dependance on petroleum
+  and palm oil.
+date: 2016-04-27T00:00:00.000Z
 external_link: ""
-
 image:
-  caption: 
-  focal_point: 
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
+  caption: null
+  focal_point: null
+  filename: featured.jpg
+  preview_only: false
 slides: ""
 ---
 
