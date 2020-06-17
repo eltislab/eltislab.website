@@ -5,13 +5,13 @@ subtitle: Creating sustainble bioproducts to reduce our dependance on petroleum
 summary: The biosynthetic potential of *Rhodococcus* can be harnessed to create
   sustainable chemicals and biomaterials that reduce our dependance on petroleum
   and palm oil.
-date: 2016-04-27T00:00:00Z
+date: 2016-04-27T00:00:00.000Z
 external_link: ""
 image:
   caption: null
   focal_point: null
   filename: featured.jpg
-  preview_only: true
+  preview_only: false
 slides: ""
 ---
 
