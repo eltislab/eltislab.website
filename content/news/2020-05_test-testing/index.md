@@ -21,6 +21,6 @@ The Eltis lab is looking to fill positions for PhD students and post docs for 20
 
 If you are interested in our projects, please contact me.
 
-Cheers,
+Sincerely,
 
 Lindsay
