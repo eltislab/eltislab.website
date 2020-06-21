@@ -10,6 +10,7 @@ organizations:
     url: https://www.microbiology.ubc.ca/
 interests:
   - Mycobacterium tuberculosis
+  - Mycobacterium abscessus
   - Cholesterol Catabolism
   - Metabolomics
   - Enzymology
