@@ -13,7 +13,7 @@ image:
 ---
 Dear applicants,
 
-The Eltis lab is looking to fill positions for PhD students and post docs for 2021. Specific, we are looking to hire team members for the following projects:
+The Eltis lab is looking to fill positions for PhD students and post docs for 2021. Specifically, we are looking to hire team members for the following projects:
 
 * Cholesterol catabolism in Mtb.
 * Pathway discovery and enzyme characterization involving lignin-derived aromatics.
