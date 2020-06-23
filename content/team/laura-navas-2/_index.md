@@ -1,5 +1,5 @@
 ---
-title: Laura Navas 2
+title: Laura Navas
 superuser: false
 user_groups:
   - Researchers
