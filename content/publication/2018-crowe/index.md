@@ -1,5 +1,5 @@
 ---
-title: "IpdAB, a virulence factor in *mycobacterium tuberculosis*, is a cholesterol ring-cleaving hydrolase"
+title: "IpdAB, a virulence factor in *Mycobacterium tuberculosis*, is a cholesterol ring-cleaving hydrolase"
 date: 2018-01-01
 publishDate: 2020-04-30T01:14:21.543986Z
 authors: ["Adam M. Crowe", "Sean D. Workman", "Nobuhiko Watanabe", "Liam J. Worrall", "Natalie C. J. Strynadka", "Lindsay D. Eltis"]
