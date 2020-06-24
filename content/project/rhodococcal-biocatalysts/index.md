@@ -1,6 +1,6 @@
 ---
 title: Rhodococcal biocatalysts to produce high-value molecules
-subtitle: Creating sustainble bioproducts to reduce our dependance on petroleum
+subtitle: Creating sustainable bioproducts to reduce our dependence on petroleum
   and palm oil.
 summary: The biosynthetic potential of *Rhodococcus* can be harnessed to create
   sustainable chemicals and biomaterials that reduce our dependance on petroleum
