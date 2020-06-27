@@ -18,6 +18,10 @@ social:
     link: mailto:your-email@domain.com
 filename: avatar
 ---
+**Previous Roles:**
+
 Research Technician - UBC Faculty of Medicine Department of Paediatrics
+
+**Current Role:**
 
 Research Technician / Lab Manager - UBC Faculty of Science Department of Microbiology and Immunology
