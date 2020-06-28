@@ -7,6 +7,8 @@ role: Lab manager
 organizations:
   - name: "University of British Columbia "
     url: ""
+  - name: Microbiology and Immunology
+    url: https://www.microbiology.ubc.ca
 education:
   courses:
     - course: M.Sc Biochemistry
@@ -15,7 +17,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:your-email@domain.com
+    link: mailto:jlian@mail.ubc.ca
 filename: avatar
 ---
 **Previous Roles:**
