@@ -124,7 +124,7 @@ collections:
           - {label: "Principal Investigator", value: "Principal Investigator"}
           - {label: "Researcher", value: "Researchers"}
           - {label: "Graduate student", value: "Graduate students"}       
-          - {label: "Technician", value: "Technicians"}
+          - {label: "Staff", value: "Staff"}
           - {label: "Visitor", value: "Visitors"}
           - {label: "Alumni", value: "Alumni"}
       - label: "Postion"

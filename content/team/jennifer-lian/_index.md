@@ -2,7 +2,7 @@
 title: Jennifer Lian
 superuser: false
 user_groups:
-  - Technicians
+  - Staff
 role: Lab manager
 organizations:
   - name: "University of British Columbia "

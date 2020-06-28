@@ -1,5 +1,6 @@
 ---
 title: Steroid catabolism in bacteria
+subtitle:
 summary: Some bacteria, including <i>Mycobacterium tuberculosis</i>, can utilize steroids as growth substrates. This has important ecological, biotechnological, and pathogenical implications.
 
 date: "2016-04-27T00:00:00Z"
