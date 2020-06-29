@@ -23,4 +23,4 @@ social:
     link: mailto:liuj@mail.ubc.ca
 filename: avatar
 ---
-Molecular biology and genetic tools such as cloning and gene expression, generating genetic knockout and compliment strains are important in gene characterization. Jie is involved in multiple lab projects on these aspects.
+Molecular biology and genetic tools such as cloning and gene expression, generating genetic knockout and compliment strains are important in gene characterization. Jie is involved in multiple lab projects on these aspects. Jie also works on *Mycobacterium Tuberculosis* research in the CL3 facility.
