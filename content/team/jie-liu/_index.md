@@ -23,8 +23,4 @@ social:
     link: mailto:liuj@mail.ubc.ca
 filename: avatar
 ---
-Molecular biology and genetic tools are important in gene characterization.  
-
-
-
-Molecular cloning and gene expression, as well as generating genetic knockout and compliment strains are some of the important tools for gene characterization. Jie is involved in multiple lab projects on these aspects.
+Molecular biology and genetic tools such as cloning and gene expression, generating genetic knockout and compliment strains are important in gene characterization. Jie is involved in multiple lab projects on these aspects.
