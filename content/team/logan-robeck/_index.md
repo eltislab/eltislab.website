@@ -20,8 +20,8 @@ education:
       institution: Concordia University
       year: "2019"
 social:
-  - icon: envelope
-    icon_pack: fas
+  - icon: "'envelope'"
+    icon_pack: "'fas'"
     link: mailto:loganrobeck@gmail.com
 filename: avatar.jpg
 ---
