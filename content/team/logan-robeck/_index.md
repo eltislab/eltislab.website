@@ -27,6 +27,6 @@ filename: avatar.jpg
 ---
 Hello!
 
-I am a Canadian-born American and I started as a PhD student in the Eltis Lab  in 2020. Broadly, my interests include understanding and improving how microbes metabolize carbon with the aim of re-purposing this capacity towards the development of the "Circular Bioeconomy".
+I am a Canadian-born American, and started as a PhD student in the Eltis Lab in 2020. Broadly, my interests include understanding and improving how microbes metabolize carbon with the aim of re-purposing this capacity towards the development of the "Circular Bioeconomy".
 
 Outside of the lab my hobbies general focus around outdoor sports, especially rock climbing!
