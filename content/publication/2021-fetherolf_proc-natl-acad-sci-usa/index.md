@@ -1,6 +1,6 @@
 ---
 title: Characterization of alkylguaiacol-degrading cytochromes P450 for the
-  biocatalytic valorization of lignin.
+  biocatalytic valorization of lignin
 date: 2020-10-14T04:34:17.211Z
 last_name_first_author: Fetherolf
 authors:
