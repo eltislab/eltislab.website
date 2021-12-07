@@ -2,7 +2,7 @@
 title: Laura Navas
 superuser: false
 user_groups:
-  - Researchers
+  - Alumni
 role: Postdoctoral fellow
 organizations:
   - name: University of British Columbia
