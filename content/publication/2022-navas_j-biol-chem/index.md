@@ -1,6 +1,7 @@
 ---
-title: "# Characterization of a phylogenetically distinct extradiol dioxygenase
-  involved in the bacterial catabolism of lignin-derived aromatic compounds"
+title: Characterization of a phylogenetically distinct extradiol
+  dioxygenase involved in the bacterial catabolism of lignin-derived
+  aromatic compounds
 date: 2022-03-25T20:40:44.620Z
 last_name_first_author: Navas
 authors:
