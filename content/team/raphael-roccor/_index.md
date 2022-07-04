@@ -2,7 +2,7 @@
 title: Raphael Roccor
 superuser: false
 user_groups:
-  - Graduate students
+  - Alumni
 role: PhD candidate
 organizations:
   - name: University of British Columbia
