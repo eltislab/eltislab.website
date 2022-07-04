@@ -2,7 +2,7 @@
 title: Jie Liu
 superuser: false
 user_groups:
-  - Staff
+  - Alumni
 role: Technician
 organizations:
   - name: University of British Columbia
