@@ -3,7 +3,7 @@ title: Jessica Krekhno
 superuser: false
 user_groups:
   - Graduate students
-role: PhD student
+role: PhD candidate
 organizations:
   - name: Univeristy of British Columbia
   - name: Microbiology and Immunology
