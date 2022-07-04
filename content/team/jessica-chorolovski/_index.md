@@ -1,5 +1,5 @@
 ---
-title: Jessica Chorolovski
+title: Jessica Krekhno
 superuser: false
 user_groups:
   - Graduate students
