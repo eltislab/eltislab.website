@@ -3,7 +3,7 @@ title: Megan Wolf
 superuser: false
 user_groups:
   - Graduate students
-role: MSc student
+role: PhD candidate
 organizations:
   - name: University of British Columbia
   - name: Genome Science and Technology
