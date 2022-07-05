@@ -6,7 +6,7 @@ summary: Congradulations to the four Eltis lab undergraduate student who
 date: 2022-07-04T20:22:15.658Z
 news: news
 image:
-  filename: undergraduate-alumni.jpg.jpg
+  filename: featured.jpg.jpg
   focal_point: Smart
   preview_only: false
 ---
