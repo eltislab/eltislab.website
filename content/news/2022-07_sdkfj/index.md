@@ -1,7 +1,7 @@
 ---
-title: sdkfj
-subtitle: ksdjfl
-summary: dfkjsldkfjs
+title: Undergraduate Alumni
+subtitle: Congratulations
+summary: Four Eltis lab undergraduate alumni on graduation day 2022
 date: 2022-07-06T05:23:07.633Z
 news: news
 image:
@@ -9,4 +9,4 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-sdkfjlkj
+Directed studies students: Harbir Bajwa, Louisa Deetz, Jerry He, and Asana Imanpour
