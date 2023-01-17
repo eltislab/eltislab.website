@@ -1,7 +1,7 @@
 ---
 title: Bacterial catabolism of acetovanillone, a lignin-derived compound
 date: 2022-10-19T03:53:39.651Z
-last_name_first_author: Dexter
+last_name_first_author: Dexter and Navas
 authors:
   - Gara N. Dexter
   - Laura E. Navas
