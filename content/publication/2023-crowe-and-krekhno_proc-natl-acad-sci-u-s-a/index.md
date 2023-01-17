@@ -10,7 +10,7 @@ authors:
   - Jayesh A. Kulkarni
   - Katherine C. Yam
   - Lindsay D. Eltis
-publication: Proc. Natl. Acad. Sci. U.S.A.
+publication: "*Proc. Natl. Acad. Sci. U.S.A.*"
 doi: https://doi.org/10.1073/pnas.2207505119
 abstract: "*Mycobacterium abscessus*, an opportunistic pathogen responsible for
   pulmonary infections, contains genes predicted to encode two steroid catabolic
