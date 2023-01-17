@@ -23,6 +23,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:jessica.chorolovski@ubc.ca
+  - icon: LinkedIn
+    icon_pack: fab
+    link: www.linkedin.com/in/jessica-krekhno-044822256
 filename: avatar.jpg.jpg
 ---
 Jessica's PhD project aims to characterize the cholesterol metabolic pathway in M*ycobacterium tuberculosis* and *Mycobacterium abscessus*, two bacteria best known for being the causative agents of serious lung disease. This pathway plays an important role in bacterial growth and virulence and several enzymes involved in the cholesterol degradation pathway have been validated as drug targets. Jessica's research will better expand our understanding of this process in order to aid in the pursuit of novel therapeutics.
