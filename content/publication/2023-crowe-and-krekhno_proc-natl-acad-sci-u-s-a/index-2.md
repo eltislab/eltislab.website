@@ -2,7 +2,7 @@
 title: The unusual convergence of steroid catabolic pathways in *Mycobacterium
   abscessus*
 date: 2022-09-26T19:01:58.655Z
-last_name_first_author: Crowe and Krekhno
+last_name_first_author: Krekhno
 authors:
   - Adam M. Crowe
   - Jessica M. C. Krekhno
