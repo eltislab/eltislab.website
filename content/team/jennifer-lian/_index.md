@@ -22,7 +22,7 @@ filename: avatar
 ---
 **Previous Roles:**
 
-Research Technician - UBC Faculty of Medicine Department of Paediatrics
+Research Technician - UBC Faculty of Medicine
 
 **Current Role:**
 
