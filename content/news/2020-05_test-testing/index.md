@@ -2,7 +2,7 @@
 title: Recruitment in the Eltis lab
 subtitle: We are accepting applications
 summary: The Eltis lab is looking to recruit PhD students and post docs for a
-  variety of projects in 2021, contact us.
+  variety of projects in 2023, contact us.
 date: 2020-05-02T23:30:12.413Z
 news: news
 image:
