@@ -22,7 +22,7 @@ filename: avatar
 ---
 **Previous Roles:**
 
-Research Technician /Lab Manager - UBC Faculty of Medicine 
+Research Technician  - UBC Faculty of Medicine 
 
 **Current Role:**
 
