@@ -13,7 +13,7 @@ education:
   courses:
     - course: M.Sc Biochemistry
       institution: University of Calgary
-      year: "2002"
+      year: "2001"
 social:
   - icon: envelope
     icon_pack: fas
