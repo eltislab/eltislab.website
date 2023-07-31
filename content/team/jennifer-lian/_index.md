@@ -14,7 +14,7 @@ education:
     - course: M.Sc Biochemistry
       institution: University of Calgary
       year: "2002"
-    - course: Certificate of Project Management
+    - course: Project Management
       institution: University of British Columbia
       year: "2010"
 social: []
