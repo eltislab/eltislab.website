@@ -14,22 +14,22 @@ interests:
   - Enzymology
 education:
   courses:
-    - course: BSc, Biology
-      institution: Ruhr-Universität Bochum
-      year: "2016"
-    - course: MSc, Biology
-      institution: Ruhr-Universität Bochum
-      year: "2018"
     - course: PhD, Biology
       institution: Ruhr-Universität Bochum
       year: "2022"
+    - course: MSc, Biology
+      institution: Ruhr-Universität Bochum
+      year: "2018"
+    - course: BSc, Biology
+      institution: Ruhr-Universität Bochum
+      year: "2016"
 social:
   - icon: envelope
     icon_pack: fas
     link: mailto:jkleetz@mail.ubc.ca
   - icon: linkedin
     icon_pack: fab
-    link: www.linkedin.com/in/julia-kleetz
+    link: https://linkedin.com/in/julia-kleetz
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0003-3985-0064
