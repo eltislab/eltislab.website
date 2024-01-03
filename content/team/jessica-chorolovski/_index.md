@@ -2,7 +2,7 @@
 title: Jessica Krekhno
 superuser: false
 user_groups:
-  - Graduate students
+  - Alumni
 role: PhD candidate
 organizations:
   - name: Univeristy of British Columbia
