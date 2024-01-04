@@ -6,7 +6,7 @@ date: 2024-01-04T00:32:12.448Z
 news: news
 image:
   filename: 71926811558__6246119d-eeca-43f2-a953-894ad8f0003a.jpg
-  focal_point: Smart
+  focal_point: CENTER
   preview_only: false
 ---
 Congratulations Dr. Krekhno! You will be missed.
