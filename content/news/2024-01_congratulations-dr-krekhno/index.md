@@ -6,7 +6,7 @@ date: 2024-01-04T00:32:12.448Z
 news: news
 image:
   filename: featured.jpg
-  focal_point: SMART
+  focal_point: Smart
   preview_only: false
 ---
 Congratulations Dr. Krekhno! You will be missed.
