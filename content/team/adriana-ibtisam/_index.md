@@ -9,7 +9,7 @@ organizations:
   - name: Microbiology and Immunology
     url: https://www.microbiology.ubc.ca/
 interests:
-  - Mycobacterium abscessus
+  - Mycobacteria
   - Cholesterol catabolism
 education:
   courses:
