@@ -5,7 +5,7 @@ date: 2023-12-06T23:58:23.359Z
 last_name_first_author: Brown
 authors:
   - Kirstin L. Brown
-  - "Jessica M. C. Krekhno "
+  - Jessica M. C. Krekhno
   - Shipei Xing
   - Tao Huan
   - Lindsay D. Eltis
