@@ -22,4 +22,4 @@ social:
     link: "mailto: tibtisam@student.ubc.ca"
 filename: avatar.jpg
 ---
-A﻿driana's MSc project aims to further characterize cholesterol catabolism in *Mycobacterium abscessus* and its role in pathogenesis, which could open avenues for novel therapeutics.
+A﻿driana's MSc project aims to further characterize cholesterol catabolism in Mycobacteria and its role in pathogenesis, which could open avenues for novel therapeutics.
