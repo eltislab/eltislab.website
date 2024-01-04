@@ -3,7 +3,7 @@ title: Recruitment in the Eltis lab
 subtitle: We are accepting applications
 summary: The Eltis lab is looking to recruit PhD students and post docs for a
   variety of projects, contact us.
-date: 2020-05-02T23:30:12.413Z
+date: 2024-01-04T21:37:43.070Z
 news: news
 image:
   filename: featured.jpg
