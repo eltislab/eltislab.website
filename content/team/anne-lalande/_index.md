@@ -3,7 +3,7 @@ title: Anne Lalande
 superuser: false
 user_groups:
   - Graduate students
-role: PhD student
+role: PhD candidate
 organizations:
   - url: " https://www.microbiology.ubc.ca/"
     name: Microbiology and Immunology
