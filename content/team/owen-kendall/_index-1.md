@@ -22,4 +22,4 @@ social:
     link: mailto:owenk9@student.ubc.ca
 filename: avatar.jpg
 ---
-O﻿wen's project aims to determine the role of enzymes in the final steps of cholesterol catabolism and the incoeporation of the resulting metabolites intor*Mycobacterium tuberculosis* central metabolism. Understanding this process is crucial in understanding pathogenicity as well as identifying new, therapeutically relevant, vulnerabilities in *M. tuberculosis*.
+O﻿wen's project aims to determine the role of enzymes in the final steps of cholesterol catabolism and the incorporation of the resulting metabolites into *Mycobacterium tuberculosis* central metabolism. Understanding this process is crucial in understanding pathogenicity as well as identifying new, therapeutically relevant, vulnerabilities in *M. tuberculosis*.
