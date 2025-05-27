@@ -2,8 +2,8 @@
 title: Megan Wolf
 superuser: false
 user_groups:
-  - Graduate students
-role: PhD candidate
+  - Researchers
+role: Postdoctoral fellow
 organizations:
   - name: University of British Columbia
   - name: Genome Science and Technology
@@ -17,6 +17,9 @@ education:
     - course: BSc, Chemical Biology
       institution: University of British Columbia
       year: "2019"
+    - course: PhD, Genome Science and Technology
+      institution: University of British Columbia
+      year: "2025"
 social:
   - icon: envelope
     icon_pack: fas
