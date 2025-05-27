@@ -1,7 +1,7 @@
 ---
 title: Lab Rock Climbing
-subtitle: Scaling more than data
-summary: Lab rock climbing
+subtitle: Lab outing
+summary: Scaling more than data
 date: 2025-05-27T18:34:20.765Z
 news: news
 image:
