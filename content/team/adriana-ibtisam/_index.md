@@ -2,7 +2,7 @@
 title: Adriana Ibtisam
 superuser: false
 user_groups:
-  - Graduate students
+  - Alumni
 role: MSc student
 organizations:
   - name: University of British Columbia
