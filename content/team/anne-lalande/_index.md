@@ -19,7 +19,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:lalande@student.ubc.ca
+    link: mailto:anne.lalande@ubc.ca
 filename: avatar.jpg
 ---
 A﻿nne's project focuses on engineering catabolism of aromatic compounds in the bacterium *Rhodococcus jostii* RHA1. Broadly, this work aims to expand the potential of microbial biocatalysts for the production of value-added chemicals using under-utilized lignin feedstocks.
