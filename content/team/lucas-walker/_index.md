@@ -14,7 +14,7 @@ interests:
   - Metabolic engineering
 education:
   courses:
-    - course: "B.A., "
+    - course: B.A., Biochemistry and Molecular Biology
       institution: Reed College
       year: "2025"
 social:
