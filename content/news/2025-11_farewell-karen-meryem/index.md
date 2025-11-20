@@ -9,4 +9,6 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-Auf Wiedersehen Karen und Meryem! It was a lot of fun to have you here and we wish you the best in Aachen!
+Auf wiedersehen Karen und Meryem! It was a lot of fun to have you here and we wish you the best in Aachen!
+
+(Karen not pictured)
