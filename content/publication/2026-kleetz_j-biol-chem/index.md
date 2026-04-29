@@ -1,5 +1,5 @@
 ---
-title: The biosynthesis of N-acylated trytazolone in *Mycobacterium
+title: The biosynthesis of N-acylated tryptazolone in *Mycobacterium
   tuberculosis* and related bacteria
 date: 2026-01-16T18:54:27.388Z
 last_name_first_author: Kleetz
