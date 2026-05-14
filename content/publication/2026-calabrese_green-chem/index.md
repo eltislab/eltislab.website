@@ -1,6 +1,5 @@
 ---
-title: H2-driven biocatalytic demethylation of lignin derived aromatics in a
-  closed-loop flow system powered by water electrolysis
+title: O
 date: 2025-12-08T18:33:06.913Z
 last_name_first_author: Calabrese
 authors:
