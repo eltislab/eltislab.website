@@ -5,6 +5,12 @@ date: 2025-12-08T18:41:03.560Z
 last_name_first_author: Calabrese
 authors:
   - Donato Calabrese
+  - Guiyeoul Lim
+  - Parsa Nayyara
+  - Megan E. Wolf
+  - Paul R. F. Cordero
+  - Lindsay D. Eltis
+  - Lars Lauterbach
 publication: "*Green Chem.*"
 doi: https://doi.org/10.1039/D5GC05054E
 abstract: Lignin is an abundant and renewable source of aromatic compounds, yet
