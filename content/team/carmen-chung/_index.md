@@ -3,7 +3,7 @@ title: Carmen Chung
 superuser: false
 user_groups:
   - Graduate students
-role: MSc student
+role: PhD candidate
 organizations:
   - name: University of British Columbia
   - name: Biochemistry and Molecular Biology
