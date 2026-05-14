@@ -3,7 +3,7 @@ title: Owen Kendall
 superuser: false
 user_groups:
   - Graduate students
-role: MSc student
+role: PhD student
 organizations:
   - name: University of British Columbia
   - name: Microbiology and Immunology
